@@ -9,15 +9,25 @@
       <p>地球上には、まだまだその多様な生態や分類が明らかになっていない生物が沢山生きています。本誌を読んだ皆さんに、その多様な生き様をもっと知りたい、その多様性の一端を明らかにしたい、と感じていただければ幸いです。</p>
     </TextCard>
 
+    <WhatsNew :items="newsItems" />
+
   </div>
 </template>
 
 <script>
 import TextCard from '@/components/TextCard.vue'
+import News from '@/data/news.json'
+import WhatsNew from '@/components/WhatsNew.vue'
 
 export default {
   components: {
     TextCard,
+    WhatsNew,
+  },
+  data() {
+    return {
+      newsItems: News.newsItems,
+    } 
   }
 }
 </script>
