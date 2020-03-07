@@ -4,7 +4,6 @@
       now loading...
     </div>
     <div v-else class="appContainer">
-
       <side-navigation />
 
       <v-content>
@@ -12,28 +11,27 @@
           <nuxt />
         </v-container>
       </v-content>
-
     </div>
   </v-app>
 </template>
 
 <script>
-import SideNavigation from '@/components/SideNavigation.vue'
+import SideNavigation from "@/components/SideNavigation.vue";
 
 export default {
   components: {
-    SideNavigation,
+    SideNavigation
   },
   data() {
     return {
       loading: true,
-      title: 'ニッチェライフ - Niche Life'
-    }
+      title: "ニッチェライフ - Niche Life"
+    };
   },
   mounted() {
-    this.loading = false
+    this.loading = false;
   }
-}
+};
 </script>
 
 <style lang="scss">

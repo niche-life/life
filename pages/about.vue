@@ -18,8 +18,11 @@
     </TextCard>
 
     <TextCard title="Google Analyticsの利用について">
-      Webページを訪問したユーザーの興味により適したコンテンツを提供するための参考として、Webページの訪問状況を把握し分析するために、Google社が提供するGoogle Analyticsを利用しています。<br />
-      Google Analyticsの利用規約及びプライバシーポリシーに関する説明については、Google Analyticsのサイトをご覧ください。<br />
+      Webページを訪問したユーザーの興味により適したコンテンツを提供するための参考として、Webページの訪問状況を把握し分析するために、Google社が提供するGoogle
+      Analyticsを利用しています。<br />
+      Google
+      Analyticsの利用規約及びプライバシーポリシーに関する説明については、Google
+      Analyticsのサイトをご覧ください。<br />
       <ul>
         <li>
           <a
@@ -56,22 +59,18 @@
     </TextCard>
 
     <TextCard title="ソースコードについて">
-      詳しくは<a
-      href=""
-      target="_blank"
-      rel="noopener"
-      >GitHubリポジトリ</a>をご確認ください。
+      詳しくは<a href="" target="_blank" rel="noopener">GitHubリポジトリ</a
+      >をご確認ください。
     </TextCard>
-
   </div>
 </template>
 
 <script>
-import TextCard from '@/components/TextCard.vue'
+import TextCard from "@/components/TextCard.vue";
 
 export default {
   components: {
-    TextCard,
+    TextCard
   }
-}
+};
 </script>

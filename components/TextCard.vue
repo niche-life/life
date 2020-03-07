@@ -1,22 +1,20 @@
 <template>
   <div class="TextCard">
-
     <v-card>
       <v-card-title v-if="title">
-         {{ title }}
+        {{ title }}
       </v-card-title>
       <v-card-text>
         <slot />
       </v-card-text>
     </v-card>
-
   </div>
 </template>
 
 <script>
 export default {
-  props: ['title'],
-}
+  props: ["title"]
+};
 </script>
 
 <style lang="scss">

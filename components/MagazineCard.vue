@@ -11,7 +11,8 @@
             <v-img :src="items.image" max-width="300" />
           </v-col>
           <v-col class="magazine-text">
-            <time>{{ items.publishedDate }}</time>刊行
+            <time>{{ items.publishedDate }}</time
+            >刊行
             <span>{{ items.description }}</span>
             <div v-for="(article, i) in items.article" :key="i">
               <a :href="article.url">{{ article.title }}</a>
