@@ -52,6 +52,7 @@
           { title: 'トップ', to: '/' },
           { title: '巻・号一覧', to: '/series'},
           { title: '投稿規定', to: '/rules', icon: '' },
+          { title: 'FAQ', to: '/faq', icon: '' },
           { title: '当サイトについて', to: '/about', icon: '' },
         ],
       }
