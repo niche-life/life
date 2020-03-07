@@ -1,92 +1,23 @@
 <template>
-  <v-layout
-    column
-    justify-center
-    align-center
-  >
-    <v-flex
-      xs12
-      sm8
-      md6
-    >
-      <div class="text-center">
-        <logo />
-        <vuetify-logo />
-      </div>
-      <v-card>
-        <v-card-title class="headline">
-          Welcome to the Vuetify + Nuxt.js template
-        </v-card-title>
-        <v-card-text>
-          <p>Vuetify is a progressive Material Design component framework for Vue.js. It was designed to empower developers to create amazing applications.</p>
-          <p>
-            For more information on Vuetify, check out the <a
-              href="https://vuetifyjs.com"
-              target="_blank"
-            >
-              documentation
-            </a>.
-          </p>
-          <p>
-            If you have questions, please join the official <a
-              href="https://chat.vuetifyjs.com/"
-              target="_blank"
-              title="chat"
-            >
-              discord
-            </a>.
-          </p>
-          <p>
-            Find a bug? Report it on the github <a
-              href="https://github.com/vuetifyjs/vuetify/issues"
-              target="_blank"
-              title="contribute"
-            >
-              issue board
-            </a>.
-          </p>
-          <p>Thank you for developing with Vuetify and I look forward to bringing more exciting features in the future.</p>
-          <div class="text-xs-right">
-            <em><small>&mdash; John Leider</small></em>
-          </div>
-          <hr class="my-3">
-          <a
-            href="https://nuxtjs.org/"
-            target="_blank"
-          >
-            Nuxt Documentation
-          </a>
-          <br>
-          <a
-            href="https://github.com/nuxt/nuxt.js"
-            target="_blank"
-          >
-            Nuxt GitHub
-          </a>
-        </v-card-text>
-        <v-card-actions>
-          <v-spacer />
-          <v-btn
-            color="primary"
-            nuxt
-            to="/inspire"
-          >
-            Continue
-          </v-btn>
-        </v-card-actions>
-      </v-card>
-    </v-flex>
-  </v-layout>
+  <div class="Index">
+
+    <TextCard>
+      <p>「ニッチェ」とは、生態学用語で、ある生物が生活する環境や、そこでその生物が利用する資源のことを意味します。</p>
+      <p>開けた土地に群落をつくるというニッチェを持つ植物、その植物を利用するというニッチェをもつ草食動物、草原で草食動物を捕食するというニッチェをもつ肉食動物……すべての生物は、地球のどこかのニッチェを占めて暮らしています。もちろん、ヒトも地球上の様々な環境をニッチェとして生きています。</p>
+      <p>1mm四方の小さな隙間をニッチェとして利用するものから、広大な土地をニッチェとして利用するものまで、あらゆる生き物がこの地球に存在しています。そして多くの生き物について、地球上に何種類いるか（分類）、どこにいるか（分布）、どのように生きているか（生態）などについて、まだまだ知られていない謎がたくさん残されています。</p>
+      <p>本誌『ニッチェ・ライフ』では、ありとあらゆる生物の謎を解明するための調査研究活動や、生き物の魅力を広く伝えるための活動を推進することを目的に、生き物についての研究成果や新たな発見の報告、生き物に関するコラムなどを掲載していきます。記事として扱う対象は、生物の分布、生態、研究手法（Methodology）、特定の分類群に関する総説、活動報告など多岐にわたります。</p>
+      <p>地球上には、まだまだその多様な生態や分類が明らかになっていない生物が沢山生きています。本誌を読んだ皆さんに、その多様な生き様をもっと知りたい、その多様性の一端を明らかにしたい、と感じていただければ幸いです。</p>
+    </TextCard>
+
+  </div>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
-import VuetifyLogo from '~/components/VuetifyLogo.vue'
+import TextCard from '@/components/TextCard.vue'
 
 export default {
   components: {
-    Logo,
-    VuetifyLogo
+    TextCard,
   }
 }
 </script>
