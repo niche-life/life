@@ -36,6 +36,11 @@ export default {
     return {
       newsItems: News.newsItems
     };
+  },
+  head() {
+    return {
+      title: "トップ"
+    };
   }
 };
 </script>

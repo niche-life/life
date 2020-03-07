@@ -14,6 +14,11 @@ import TextCard from "@/components/TextCard.vue";
 export default {
   components: {
     TextCard
+  },
+  head() {
+    return {
+      title: "よくある質問"
+    };
   }
 };
 </script>

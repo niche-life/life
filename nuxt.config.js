@@ -6,15 +6,65 @@ export default {
    ** Headers of the page
    */
   head: {
-    titleTemplate: "%s - " + process.env.npm_package_name,
-    title: process.env.npm_package_name || "",
+    htmlAttrs: {
+      prefix: "og: http://ogp.me/ns#"
+    },
+    titleTemplate: "%s - " + "ニッチェ・ライフ",
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       {
         hid: "description",
         name: "description",
-        content: process.env.npm_package_description || ""
+        content:
+          "本誌『ニッチェ・ライフ』では、ありとあらゆる生物の謎を解明するための調査研究活動や、生き物の魅力を広く伝えるための活動を推進することを目的に、生き物についての研究成果や新たな発見の報告、生き物に関するコラムなどを掲載していきます。"
+      },
+      {
+        hid: "og:site_name",
+        property: "og:site_name",
+        content: "ニッチェ・ライフ"
+      },
+      { hid: "og:type", property: "og:type", content: "website" },
+      {
+        hid: "og:url",
+        property: "og:url",
+        content: "" // TODO
+      },
+      {
+        hid: "og:title",
+        property: "og:title",
+        content: "ニッチェ・ライフ"
+      },
+      {
+        hid: "og:description",
+        property: "og:description",
+        content:
+          "本誌『ニッチェ・ライフ』では、ありとあらゆる生物の謎を解明するための調査研究活動や、生き物の魅力を広く伝えるための活動を推進することを目的に、生き物についての研究成果や新たな発見の報告、生き物に関するコラムなどを掲載していきます。"
+      },
+      {
+        hid: "og:image",
+        property: "og:image",
+        content: "" // TODO
+      },
+      {
+        hid: "twitter:card",
+        name: "twitter:card",
+        content: "summary_large_image"
+      },
+      {
+        hid: "twitter:site",
+        name: "twitter:site",
+        content: "@NicheLife_Tw"
+      },
+      {
+        hid: "twitter:creator",
+        name: "twitter:creator",
+        content: "@NicheLife_Tw"
+      },
+      {
+        hid: "twitter:image",
+        name: "twitter:image",
+        content: "" // TODO
       }
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]

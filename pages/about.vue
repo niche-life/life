@@ -71,6 +71,11 @@ import TextCard from "@/components/TextCard.vue";
 export default {
   components: {
     TextCard
+  },
+  head() {
+    return {
+      title: "当サイトについて"
+    };
   }
 };
 </script>

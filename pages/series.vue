@@ -20,6 +20,11 @@ export default {
     return {
       magazineData: Magazine.magazineData
     };
+  },
+  head() {
+    return {
+      title: "巻号一覧"
+    };
   }
 };
 </script>
