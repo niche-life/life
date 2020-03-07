@@ -4,7 +4,7 @@
       now loading...
     </div>
     <div v-else class="appContainer">
-      <side-navigation />
+      <side-navigation v-if="!$vuetify.breakpoint.smAndDown" />
 
       <v-content>
         <v-container>
