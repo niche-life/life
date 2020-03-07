@@ -15,7 +15,7 @@
     <v-divider></v-divider>
 
     <v-list nav>
-      <v-list-item v-for="item in items" :key="item.title" :to="item.to" link>
+      <v-list-item v-for="item in links" :key="item.title" :to="item.to" link>
         <v-list-item-content>
           <v-list-item-title>{{ item.title }}</v-list-item-title>
         </v-list-item-content>
@@ -32,16 +32,9 @@
 
 <script>
 export default {
+  props: ["links"],
   data() {
-    return {
-      items: [
-        { title: "トップ", to: "/" },
-        { title: "巻・号一覧", to: "/series" },
-        { title: "投稿規定", to: "/rules", icon: "" },
-        { title: "よくある質問", to: "/faq", icon: "" },
-        { title: "当サイトについて", to: "/about", icon: "" }
-      ]
-    };
+    return {};
   }
 };
 </script>

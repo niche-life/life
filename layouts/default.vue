@@ -4,8 +4,8 @@
       now loading...
     </div>
     <div v-else class="appContainer">
-      <side-navigation v-if="!$vuetify.breakpoint.smAndDown" />
-
+      <side-navigation :links="links" v-if="!$vuetify.breakpoint.smAndDown" />
+      <top-navigation :links="links" v-else />
       <v-content>
         <v-container>
           <nuxt />
@@ -17,15 +17,24 @@
 
 <script>
 import SideNavigation from "@/components/SideNavigation.vue";
+import TopNavigation from "@/components/TopNavigation.vue";
 
 export default {
   components: {
-    SideNavigation
+    SideNavigation,
+    TopNavigation
   },
   data() {
     return {
       loading: true,
-      title: "ニッチェライフ - Niche Life"
+      title: "ニッチェライフ - Niche Life",
+      links: [
+        { title: "トップ", to: "/" },
+        { title: "巻・号一覧", to: "/series" },
+        { title: "投稿規定", to: "/rules", icon: "" },
+        { title: "よくある質問", to: "/faq", icon: "" },
+        { title: "当サイトについて", to: "/about", icon: "" }
+      ]
     };
   },
   mounted() {
