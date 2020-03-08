@@ -4,9 +4,11 @@
       <v-card-title v-if="title">
         {{ title }}
       </v-card-title>
-      <v-card-text>
-        <slot />
-      </v-card-text>
+      <div class="TextCardText">
+        <v-card-text>
+          <slot />
+        </v-card-text>
+      </div>
     </v-card>
   </div>
 </template>
@@ -19,6 +21,9 @@ export default {
 
 <style lang="scss">
 .TextCard {
-  padding: 10px;
+  padding: 7px;
+}
+.TextCardText {
+  padding: 0 10px;
 }
 </style>
