@@ -11,7 +11,6 @@
           <nuxt />
         </v-container>
       </v-content>
-      <FooterComponent />
     </div>
   </v-app>
 </template>
@@ -57,6 +56,10 @@ export default {
   max-width: 1280px;
   margin-right: auto;
   margin-left: auto;
+}
+
+.body {
+  background-color: black;
 }
 
 .loader {
