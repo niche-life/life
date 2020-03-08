@@ -1,6 +1,9 @@
 <template>
   <div class="Index">
     <v-img src="/nichetit.jpg"> </v-img>
+
+    <WhatsNew :items="newsItems" />
+
     <TextCard>
       <p>
         「ニッチェ」とは、生態学用語で、ある生物が生活する環境や、そこでその生物が利用する資源のことを意味します。
@@ -18,8 +21,6 @@
         地球上には、まだまだその多様な生態や分類が明らかになっていない生物が沢山生きています。本誌を読んだ皆さんに、その多様な生き様をもっと知りたい、その多様性の一端を明らかにしたい、と感じていただければ幸いです。
       </p>
     </TextCard>
-
-    <WhatsNew :items="newsItems" />
   </div>
 </template>
 
