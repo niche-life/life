@@ -29,11 +29,19 @@ export default {
       loading: true,
       title: "ニッチェライフ - Niche Life",
       links: [
-        { title: "トップ", to: "/" },
-        { title: "巻・号一覧", to: "/series" },
-        { title: "投稿規定", to: "/rules", icon: "" },
-        { title: "よくある質問", to: "/faq", icon: "" },
-        { title: "当サイトについて", to: "/about", icon: "" }
+        { title: "トップ", to: "/", icon: "mdi-home" },
+        { title: "巻・号一覧", to: "/series", icon: "mdi-bookshelf" },
+        { title: "投稿規定", to: "/rules", icon: "mdi-pencil-ruler" },
+        {
+          title: "よくある質問",
+          to: "/faq",
+          icon: "mdi-frequently-asked-questions"
+        },
+        {
+          title: "当サイトについて",
+          to: "/about",
+          icon: "mdi-information-outline"
+        }
       ]
     };
   },
