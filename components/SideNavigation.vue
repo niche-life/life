@@ -18,9 +18,7 @@
       <v-list nav>
         <v-list-item v-for="item in links" :key="item.title" :to="item.to" link>
           <v-list-item-avatar>
-            <v-avatar color="grey">
-              <v-icon dark v-text="item.icon"></v-icon>
-            </v-avatar>
+            <v-icon v-text="item.icon"></v-icon>
           </v-list-item-avatar>
           <v-list-item-content>
             <v-list-item-title>

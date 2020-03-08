@@ -11,6 +11,7 @@
           <nuxt />
         </v-container>
       </v-content>
+      <FooterComponent />
     </div>
   </v-app>
 </template>
