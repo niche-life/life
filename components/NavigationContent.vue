@@ -30,6 +30,18 @@
     <v-divider></v-divider>
 
     <v-list-item>
+      <div v-for="icon in icons" :key="icon">
+        <v-btn icon :href="icon.url">
+          <v-icon size="24px" :color="icon.color">
+            {{ icon.icon }}
+          </v-icon>
+        </v-btn>
+      </div>
+    </v-list-item>
+
+    <v-divider></v-divider>
+
+    <v-list-item>
       <v-switch
         v-model="$vuetify.theme.dark"
         label="ダークモードに変更"
@@ -58,7 +70,16 @@
 export default {
   props: ["links"],
   data() {
-    return {};
+    return {
+      icons: [
+        {
+          icon: "fab fa-twitter",
+          url: "https://twitter.com/nichelife_tw",
+          color: "blue"
+        },
+        { icon: "fab fa-github", url: "", color: "black" }
+      ]
+    };
   }
 };
 </script>

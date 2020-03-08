@@ -15,6 +15,7 @@
     "vue-property-decorator": "^8.4.0"
   },
   "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.12.1",
     "@nuxtjs/vuetify": "^1.0.0",
     "eslint-config-prettier": "^6.10.0",
     "eslint-plugin-prettier": "^3.1.2",
