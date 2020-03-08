@@ -22,8 +22,13 @@
 
       <v-list nav>
         <v-list-item v-for="item in links" :key="item.title" :to="item.to" link>
+          <v-list-item-avatar>
+            <v-icon v-text="item.icon"></v-icon>
+          </v-list-item-avatar>
           <v-list-item-content>
-            <v-list-item-title>{{ item.title }}</v-list-item-title>
+            <v-list-item-title>
+              {{ item.title }}
+            </v-list-item-title>
           </v-list-item-content>
         </v-list-item>
       </v-list>
@@ -31,7 +36,26 @@
       <v-divider></v-divider>
 
       <v-list-item>
+        <v-switch
+          v-model="$vuetify.theme.dark"
+          label="ダークモードに変更"
+        ></v-switch>
+      </v-list-item>
+
+      <v-divider></v-divider>
+
+      <v-list-item>
         ISSN (Online) 2188-0972
+      </v-list-item>
+
+      <v-divider></v-divider>
+
+      <v-list-item>
+        <p class="caption">
+          <br />
+          Copyright © 2013-{{ new Date().getFullYear() }} Niche Life Editorial
+          Comittee. All Rights Reserved, if not otherwise specified.
+        </p>
       </v-list-item>
     </v-navigation-drawer>
   </div>
