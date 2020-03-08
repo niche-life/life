@@ -33,6 +33,16 @@
       <v-list-item>
         ISSN (Online) 2188-0972
       </v-list-item>
+
+      <v-divider></v-divider>
+
+      <v-list-item>
+        <p class="caption">
+          <br />
+          Copyright © 2013-{{ new Date().getFullYear() }} Niche Life Editorial
+          Comittee. All Rights Reserved, if not otherwise specified.
+        </p>
+      </v-list-item>
     </v-navigation-drawer>
   </div>
 </template>
