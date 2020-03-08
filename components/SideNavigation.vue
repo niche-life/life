@@ -31,6 +31,15 @@
       <v-divider></v-divider>
 
       <v-list-item>
+        <v-switch
+          v-model="$vuetify.theme.dark"
+          label="ダークモードに変更"
+        ></v-switch>
+      </v-list-item>
+
+      <v-divider></v-divider>
+
+      <v-list-item>
         ISSN (Online) 2188-0972
       </v-list-item>
 
