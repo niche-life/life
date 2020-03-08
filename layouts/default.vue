@@ -4,8 +4,11 @@
       now loading...
     </div>
     <div v-else class="appContainer">
-      <side-navigation :links="links" v-if="!$vuetify.breakpoint.smAndDown" />
-      <top-navigation :links="links" v-else />
+      <NavigationForMoreSM
+        :links="links"
+        v-if="!$vuetify.breakpoint.smAndDown"
+      />
+      <NavigationForXS :links="links" v-else />
       <v-content>
         <v-container>
           <nuxt />
@@ -16,13 +19,13 @@
 </template>
 
 <script>
-import SideNavigation from "@/components/SideNavigation.vue";
-import TopNavigation from "@/components/TopNavigation.vue";
+import NavigationForMoreSM from "@/components/NavigationForMoreSM.vue";
+import NavigationForXS from "@/components/NavigationForXS.vue";
 
 export default {
   components: {
-    SideNavigation,
-    TopNavigation
+    NavigationForMoreSM,
+    NavigationForXS
   },
   data() {
     return {
