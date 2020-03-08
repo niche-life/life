@@ -36,7 +36,7 @@ export default {
   },
   data() {
     return {
-      newsItems: News.newsItems
+      newsItems: News.newsItems.slice(0, 3)
     };
   },
   head() {
