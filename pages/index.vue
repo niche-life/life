@@ -1,5 +1,6 @@
 <template>
   <div class="Index">
+    <v-img src="/nichetit.jpg"> </v-img>
     <TextCard>
       <p>
         「ニッチェ」とは、生態学用語で、ある生物が生活する環境や、そこでその生物が利用する資源のことを意味します。
