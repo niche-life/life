@@ -1,6 +1,6 @@
 <template>
   <div class="SideNavigation">
-    <v-navigation-drawer app absolute permanent floating>
+    <v-navigation-drawer app fixed permanent floating style="left: auto;">
       <NavigationContent :links="links" />
     </v-navigation-drawer>
   </div>
