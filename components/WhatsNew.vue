@@ -2,12 +2,12 @@
   <div class="WhatsNew">
     <v-card>
       <v-card-title>
-        <h2>
-          <v-icon size="30">
+        <h4>
+          <v-icon size="20">
             mdi-information
           </v-icon>
           最新のお知らせ
-        </h2>
+        </h4>
       </v-card-title>
       <v-card-text>
         <div v-for="(item, i) in items" :key="i">
