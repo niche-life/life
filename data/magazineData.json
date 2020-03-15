@@ -4,7 +4,7 @@
       "series": "ニッチェ・ライフ 第6号",
       "publishedDate": "2019/05/31",
       "url": "http://",
-      "image": "https://unsplash.it/680/450",
+      "image": "thumbnail/NicheLife6.jpg",
       "article": [
         {
           "title": "ウィキペディア編集者向けの文献提供プロジェクト開始！　ウィキペディア図書館の紹介と利用の仕方（熊澤辰徳）",
@@ -23,27 +23,27 @@
     {
       "series": "ニッチェ・ライフ 第5号",
       "url": "http://",
-      "image": "https://unsplash.it/680/450"
+      "image": "thumbnail/NicheLife5.jpg"
     },
     {
       "series": "ニッチェ・ライフ 第4号",
       "url": "http://",
-      "image": "https://unsplash.it/680/450"
+      "image": "thumbnail/NicheLife4.jpg"
     },
     {
       "series": "ニッチェ・ライフ 第3号",
       "url": "http://",
-      "image": "https://unsplash.it/680/450"
+      "image": "thumbnail/NicheLife3.jpg"
     },
     {
       "series": "ニッチェ・ライフ 第2号",
       "url": "http://",
-      "image": "https://unsplash.it/680/450"
+      "image": "thumbnail/NicheLife2.jpg"
     },
     {
       "series": "ニッチェ・ライフ 第1号",
       "url": "http://",
-      "image": "https://unsplash.it/680/450"
+      "image": "thumbnail/NicheLife1.jpg"
     }
   ]
 }

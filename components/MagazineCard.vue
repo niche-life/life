@@ -8,7 +8,7 @@
       <v-card-text>
         <v-row justify="space-between">
           <v-col cols="auto">
-            <v-img :src="items.image" max-width="300" />
+            <v-img :src="items.image" max-width="250" />
           </v-col>
           <v-col class="magazine-text">
             <time>{{ items.publishedDate }}</time
