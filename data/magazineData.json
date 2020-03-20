@@ -7,6 +7,10 @@
       "image": "thumbnail/NicheLife6.jpg",
       "article": [
         {
+          "title": "表紙・目次",
+          "url": "006/Niche006_00.pdf"
+        },
+        {
           "title": "ウィキペディア編集者向けの文献提供プロジェクト開始！　ウィキペディア図書館の紹介と利用の仕方（熊澤辰徳）",
           "url": "006/Niche006_01.pdf"
         },
@@ -17,6 +21,10 @@
         {
           "title": "2018年ニッチェ・ライフ出展報告",
           "url": "006/Niche006_03.pdf"
+        },
+        {
+          "title": "投稿規定・編集後記",
+          "url": "006/Niche006_99.pdf"
         }
       ]
     },
@@ -26,6 +34,10 @@
       "publishedDate": "2017/12/31",
       "image": "thumbnail/NicheLife5.jpg",
       "article": [
+        {
+          "title": "表紙・目次",
+          "url": "005/Niche005_00.pdf"
+        },
         {
           "title": "タブレット顕微鏡でメダカ受精卵観察～授業指導案と実践例～",
           "url": "005/Niche005_01.pdf"
@@ -41,6 +53,10 @@
         {
           "title": "Twitter で人気のあったミクロ生物たち",
           "url": "005/Niche005_04.pdf"
+        },
+        {
+          "title": "投稿規定・編集後記",
+          "url": "005/Niche005_99.pdf"
         }
       ]
     },
@@ -50,6 +66,10 @@
       "publishedDate": "2016/12/31",
       "image": "thumbnail/NicheLife4.jpg",
       "article": [
+        {
+          "title": "表紙・目次",
+          "url": "004/Niche004_00.pdf"
+        },
         {
           "title": "ミドリムシの家族を紹介します～「藻ンスター」たちの多様性と進化～",
           "url": "004/Niche004_01.pdf"
@@ -69,6 +89,10 @@
         {
           "title": "2016 年ニッチェ・ライフ出展報告",
           "url": "004/Niche004_05.pdf"
+        },
+        {
+          "title": "投稿規定・編集後記",
+          "url": "004/Niche004_99.pdf"
         }
       ]
     },
@@ -78,6 +102,10 @@
       "publishedDate": "2015/12/31",
       "image": "thumbnail/NicheLife3.jpg",
       "article": [
+        {
+          "title": "表紙・目次",
+          "url": "003/Niche003_00.pdf"
+        },
         {
           "title": "2015年ニッチェ・ライフ出展報告",
           "url": "003/Niche003_01.pdf"
@@ -89,6 +117,10 @@
         {
           "title": "知られざる小さきハンター、アシナガバエの世界 ",
           "url": "003/Niche003_03.pdf"
+        },
+        {
+          "title": "投稿規定・編集後記",
+          "url": "003/Niche003_99.pdf"
         }
       ]
     },
@@ -98,6 +130,10 @@
       "publishedDate": "2014/12/31",
       "image": "thumbnail/NicheLife2.jpg",
       "article": [
+        {
+          "title": "表紙・目次",
+          "url": "002/Niche002_00.pdf"
+        },
         {
           "title": "博物ふぇすてぃばる！・レポート",
           "url": "002/Niche002_01.pdf"
@@ -117,6 +153,10 @@
         {
           "title": "『ニッチェ・ライフ』誌アンケート",
           "url": "002/Niche002_05.pdf"
+        },
+        {
+          "title": "投稿規定・編集後記",
+          "url": "002/Niche002_99.pdf"
         }
       ]
     },
@@ -126,6 +166,10 @@
       "publishedDate": "2013/9/30",
       "image": "thumbnail/NicheLife1.jpg",
       "article": [
+        {
+          "title": "表紙・目次",
+          "url": "001/Niche001_00.pdf"
+        },
         {
           "title": "身近なコケ植物――その分類と生態",
           "url": "001/Niche001_01.pdf"
@@ -137,6 +181,10 @@
         {
           "title": "DIY Biologyの現在とこれから",
           "url": "001/Niche001_03.pdf"
+        },
+        {
+          "title": "投稿規定・編集後記",
+          "url": "001/Niche001_99.pdf"
         }
       ]
     }
