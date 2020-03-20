@@ -3,7 +3,7 @@
     <v-card>
       <v-card-title>
         {{ items.series }}
-        <a :href="items.url">[PDF]</a>
+        <a :href="getPdfUrl(items.url)">[PDF]</a>
       </v-card-title>
       <v-card-text>
         <v-row justify="space-between">
@@ -15,7 +15,7 @@
             >刊行
             <span>{{ items.description }}</span>
             <div v-for="(article, i) in items.article" :key="i">
-              <a :href="article.url">{{ article.title }}</a>
+              <a :href="getPdfUrl(article.url)">{{ article.title }}</a>
             </div>
           </v-col>
         </v-row>
@@ -30,6 +30,18 @@ export default {
     items: {
       type: Array,
       required: true
+    }
+  },
+  data() {
+    return {
+      s3baseUrl:
+        "https://nichelife-media.s3-ap-northeast-1.amazonaws.com/paper/"
+    };
+  },
+  methods: {
+    getPdfUrl(path) {
+      var url = this.s3baseUrl + path;
+      return url;
     }
   }
 };

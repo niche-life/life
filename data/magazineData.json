@@ -3,47 +3,142 @@
     {
       "series": "ニッチェ・ライフ 第6号",
       "publishedDate": "2019/05/31",
-      "url": "http://",
+      "url": "006/Niche006.pdf",
       "image": "thumbnail/NicheLife6.jpg",
       "article": [
         {
           "title": "ウィキペディア編集者向けの文献提供プロジェクト開始！　ウィキペディア図書館の紹介と利用の仕方（熊澤辰徳）",
-          "url": ""
+          "url": "006/Niche006_01.pdf"
         },
         {
           "title": "MicroLife MOVIE 〜動画で楽しむミクロ・ライフ〜（早川 昌志）",
-          "url": ""
+          "url": "006/Niche006_02.pdf"
         },
         {
           "title": "2018年ニッチェ・ライフ出展報告",
-          "url": ""
+          "url": "006/Niche006_03.pdf"
         }
       ]
     },
     {
       "series": "ニッチェ・ライフ 第5号",
-      "url": "http://",
-      "image": "thumbnail/NicheLife5.jpg"
+      "url": "005/Niche005.pdf",
+      "publishedDate": "2017/12/31",
+      "image": "thumbnail/NicheLife5.jpg",
+      "article": [
+        {
+          "title": "タブレット顕微鏡でメダカ受精卵観察～授業指導案と実践例～",
+          "url": "005/Niche005_01.pdf"
+        },
+        {
+          "title": "インスタ映えするハエ・アブの仲間たち ",
+          "url": "005/Niche005_02.pdf"
+        },
+        {
+          "title": "2017 年ニッチェ・ライフ出展報告",
+          "url": "005/Niche005_03.pdf"
+        },
+        {
+          "title": "Twitter で人気のあったミクロ生物たち",
+          "url": "005/Niche005_04.pdf"
+        }
+      ]
     },
     {
       "series": "ニッチェ・ライフ 第4号",
-      "url": "http://",
-      "image": "thumbnail/NicheLife4.jpg"
+      "url": "004/Niche004.pdf",
+      "publishedDate": "2016/12/31",
+      "image": "thumbnail/NicheLife4.jpg",
+      "article": [
+        {
+          "title": "ミドリムシの家族を紹介します～「藻ンスター」たちの多様性と進化～",
+          "url": "004/Niche004_01.pdf"
+        },
+        {
+          "title": "小型昆虫の三角台紙貼り標本の作製手順",
+          "url": "004/Niche004_02.pdf"
+        },
+        {
+          "title": "ミクロの自然を閉じ込めて楽しむ、簡単コケ瓶の作り方",
+          "url": "004/Niche004_03.pdf"
+        },
+        {
+          "title": "紹介：『趣味からはじめる昆虫学』",
+          "url": "004/Niche004_04.pdf"
+        },
+        {
+          "title": "2016 年ニッチェ・ライフ出展報告",
+          "url": "004/Niche004_05.pdf"
+        }
+      ]
     },
     {
       "series": "ニッチェ・ライフ 第3号",
-      "url": "http://",
-      "image": "thumbnail/NicheLife3.jpg"
+      "url": "003/Niche003.pdf",
+      "publishedDate": "2015/12/31",
+      "image": "thumbnail/NicheLife3.jpg",
+      "article": [
+        {
+          "title": "2015年ニッチェ・ライフ出展報告",
+          "url": "003/Niche003_01.pdf"
+        },
+        {
+          "title": "マニアック生物アートサークル『生物部』の活動について",
+          "url": "003/Niche003_02.pdf"
+        },
+        {
+          "title": "知られざる小さきハンター、アシナガバエの世界 ",
+          "url": "003/Niche003_03.pdf"
+        }
+      ]
     },
     {
       "series": "ニッチェ・ライフ 第2号",
-      "url": "http://",
-      "image": "thumbnail/NicheLife2.jpg"
+      "url": "002/Niche002.pdf",
+      "publishedDate": "2014/12/31",
+      "image": "thumbnail/NicheLife2.jpg",
+      "article": [
+        {
+          "title": "博物ふぇすてぃばる！・レポート",
+          "url": "002/Niche002_01.pdf"
+        },
+        {
+          "title": "ブース・インタビュー",
+          "url": "002/Niche002_02.pdf"
+        },
+        {
+          "title": "第1回博物ふぇすてぃばる！ ミニ写真集",
+          "url": "002/Niche002_03.pdf"
+        },
+        {
+          "title": "博物ファッションコレクション",
+          "url": "002/Niche002_04.pdf"
+        },
+        {
+          "title": "『ニッチェ・ライフ』誌アンケート",
+          "url": "002/Niche002_05.pdf"
+        }
+      ]
     },
     {
       "series": "ニッチェ・ライフ 第1号",
-      "url": "http://",
-      "image": "thumbnail/NicheLife1.jpg"
+      "url": "001/Niche001.pdf",
+      "publishedDate": "2013/9/30",
+      "image": "thumbnail/NicheLife1.jpg",
+      "article": [
+        {
+          "title": "身近なコケ植物――その分類と生態",
+          "url": "001/Niche001_01.pdf"
+        },
+        {
+          "title": "原生生物の観察方法",
+          "url": "001/Niche001_02.pdf"
+        },
+        {
+          "title": "DIY Biologyの現在とこれから",
+          "url": "001/Niche001_03.pdf"
+        }
+      ]
     }
   ]
 }
