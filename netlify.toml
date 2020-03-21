@@ -1,3 +1,6 @@
 [build]
   publish = "dist"
-  command = "yarn install; yarn run generate;echo -e 'User-agent: *\nDisallow: /' > ./dist/robots.txt"
+  command = "yarn install; yarn run generate; cp ./env/robots.noprod.txt ./dist/robots.txt"
+
+[context.production]
+  command = "yarn install; yarn run generate; cp ./env/robots.prod.txt ./dist/robots.txt"
