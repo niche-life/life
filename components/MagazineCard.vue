@@ -8,7 +8,7 @@
       <v-card-text>
         <v-row justify="space-between">
           <v-col cols="auto">
-            <v-img :src="items.image" max-width="250" />
+            <v-img v-bind:src="getThunmbnailUrl(items.image)" max-width="250" />
           </v-col>
           <v-col class="magazine-text">
             <time>{{ items.publishedDate }}</time
@@ -41,6 +41,10 @@ export default {
   methods: {
     getPdfUrl(path) {
       var url = this.s3baseUrl + path;
+      return url;
+    },
+    getThunmbnailUrl(path) {
+      var url = require("@/assets/" + path);
       return url;
     }
   }
