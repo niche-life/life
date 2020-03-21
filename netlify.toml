@@ -1,11 +1,6 @@
 [build]
   publish = "dist"
+  command = "yarn install; yarn run generate; cp ./env/robots.noprod.txt ./dist/robots.txt"
 
 [context.production]
   command = "yarn install; yarn run generate; cp ./env/robots.prod.txt ./dist/robots.txt"
-
-[context.deploy-preview]
-  command = "yarn install; yarn run generate; cp ./env/robots.noprod.txt ./dist/robots.txt"
-
-[context.branch-deploy]
-  command = "yarn install; yarn run generate; cp ./env/robots.noprod.txt ./dist/robots.txt"
