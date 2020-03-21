@@ -1,0 +1,3 @@
+[build]
+  publish = "dist"
+  command = "yarn install; yarn run generate;echo -e 'User-agent: *\nDisallow: /' > ./dist/robots.txt"
