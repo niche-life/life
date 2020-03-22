@@ -12,10 +12,9 @@
           </v-col>
           <v-col class="magazine-text">
             <time>{{ items.publishedDate }}</time
-            >刊行
-            <span>{{ items.description }}</span>
+            >刊行 <br /><br />
             <div v-for="(article, i) in items.article" :key="i">
-              <a :href="getPdfUrl(article.url)">{{ article.title }}</a>
+              <a :href="getPdfUrl(article.url)">{{ getPaperText(article) }}</a>
             </div>
           </v-col>
         </v-row>
@@ -46,6 +45,10 @@ export default {
     getThunmbnailUrl(path) {
       var url = require("@/assets/" + path);
       return url;
+    },
+    getPaperText(article) {
+      var author = article.author ? " (" + article.author + ")" : "";
+      return article.page + ": " + article.title + author;
     }
   }
 };
