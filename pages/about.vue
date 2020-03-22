@@ -59,7 +59,11 @@
     </TextCard>
 
     <TextCard title="ソースコードについて">
-      詳しくは<a href="" target="_blank" rel="noopener">GitHubリポジトリ</a
+      詳しくは<a
+        href="https://github.com/niche-life/life"
+        target="_blank"
+        rel="noopener"
+        >GitHubリポジトリ</a
       >をご確認ください。
     </TextCard>
   </div>
