@@ -14,7 +14,11 @@
             <time>{{ items.publishedDate }}</time
             >刊行 <br /><br />
             <div v-for="(article, i) in items.article" :key="i">
-              <a :href="getPdfUrl(article.url)">{{ getPaperText(article) }}</a>
+              <p>
+                <a :href="getPdfUrl(article.url)">{{
+                  getPaperText(article)
+                }}</a>
+              </p>
             </div>
           </v-col>
         </v-row>
