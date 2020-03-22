@@ -77,7 +77,11 @@ export default {
           url: "https://twitter.com/nichelife_tw",
           color: "blue"
         },
-        { icon: "fab fa-github", url: "", color: "black" }
+        {
+          icon: "fab fa-github",
+          url: "https://github.com/niche-life/life",
+          color: "black"
+        }
       ]
     };
   }

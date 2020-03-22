@@ -3,7 +3,7 @@
     <v-card>
       <v-card-title>
         {{ items.series }}
-        <a :href="getPdfUrl(items.url)" target="_blank">[PDF]</a>
+        <a :href="getPdfUrl(items.url)" target="_blank" rel="noopener">[PDF]</a>
       </v-card-title>
       <v-card-text>
         <v-row justify="space-between">
@@ -15,9 +15,12 @@
             >刊行 <br /><br />
             <div v-for="(article, i) in items.article" :key="i">
               <p>
-                <a :href="getPdfUrl(article.url)" target="_blank">{{
-                  getPaperText(article)
-                }}</a>
+                <a
+                  :href="getPdfUrl(article.url)"
+                  target="_blank"
+                  rel="noopener"
+                  >{{ getPaperText(article) }}</a
+                >
               </p>
             </div>
           </v-col>
