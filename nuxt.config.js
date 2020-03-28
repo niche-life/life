@@ -7,7 +7,7 @@ export default {
    */
   head: {
     htmlAttrs: {
-      prefix: "og: http://ogp.me/ns#"
+      prefix: "og: http://ogp.me/ns#",
     },
     titleTemplate: "%s - " + "ニッチェ・ライフ",
     meta: [
@@ -17,57 +17,57 @@ export default {
         hid: "description",
         name: "description",
         content:
-          "本誌『ニッチェ・ライフ』では、ありとあらゆる生物の謎を解明するための調査研究活動や、生き物の魅力を広く伝えるための活動を推進することを目的に、生き物についての研究成果や新たな発見の報告、生き物に関するコラムなどを掲載していきます。"
+          "本誌『ニッチェ・ライフ』では、ありとあらゆる生物の謎を解明するための調査研究活動や、生き物の魅力を広く伝えるための活動を推進することを目的に、生き物についての研究成果や新たな発見の報告、生き物に関するコラムなどを掲載していきます。",
       },
       {
         hid: "og:site_name",
         property: "og:site_name",
-        content: "ニッチェ・ライフ"
+        content: "ニッチェ・ライフ",
       },
       { hid: "og:type", property: "og:type", content: "website" },
       {
         hid: "og:url",
         property: "og:url",
-        content: "" // TODO
+        content: "", // TODO
       },
       {
         hid: "og:title",
         property: "og:title",
-        content: "ニッチェ・ライフ"
+        content: "ニッチェ・ライフ",
       },
       {
         hid: "og:description",
         property: "og:description",
         content:
-          "本誌『ニッチェ・ライフ』では、ありとあらゆる生物の謎を解明するための調査研究活動や、生き物の魅力を広く伝えるための活動を推進することを目的に、生き物についての研究成果や新たな発見の報告、生き物に関するコラムなどを掲載していきます。"
+          "本誌『ニッチェ・ライフ』では、ありとあらゆる生物の謎を解明するための調査研究活動や、生き物の魅力を広く伝えるための活動を推進することを目的に、生き物についての研究成果や新たな発見の報告、生き物に関するコラムなどを掲載していきます。",
       },
       {
         hid: "og:image",
         property: "og:image",
-        content: "" // TODO
+        content: "", // TODO
       },
       {
         hid: "twitter:card",
         name: "twitter:card",
-        content: "summary_large_image"
+        content: "summary_large_image",
       },
       {
         hid: "twitter:site",
         name: "twitter:site",
-        content: "@NicheLife_Tw"
+        content: "@NicheLife_Tw",
       },
       {
         hid: "twitter:creator",
         name: "twitter:creator",
-        content: "@NicheLife_Tw"
+        content: "@NicheLife_Tw",
       },
       {
         hid: "twitter:image",
         name: "twitter:image",
-        content: "" // TODO
-      }
+        content: "", // TODO
+      },
     ],
-    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
+    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
   },
   /*
    ** Customize the progress-bar color
@@ -106,7 +106,7 @@ export default {
           info: colors.teal.lighten1,
           warning: colors.amber.base,
           error: colors.deepOrange.accent4,
-          success: colors.green.accent3
+          success: colors.green.accent3,
         },
         light: {
           primary: "#1976D2",
@@ -115,10 +115,10 @@ export default {
           error: "#FF5252",
           info: "#2196F3",
           success: "#4CAF50",
-          warning: "#FFC107"
-        }
-      }
-    }
+          warning: "#FFC107",
+        },
+      },
+    },
   },
   /*
    ** Build configuration
@@ -127,6 +127,6 @@ export default {
     /*
      ** You can extend webpack config here
      */
-    extend(config, ctx) {}
-  }
+    extend(config, ctx) {},
+  },
 };
