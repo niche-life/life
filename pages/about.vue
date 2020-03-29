@@ -54,10 +54,6 @@
       </ul>
     </TextCard>
 
-    <TextCard title="免責事項">
-      *****
-    </TextCard>
-
     <TextCard title="ソースコードについて">
       詳しくは<a
         href="https://github.com/niche-life/life"
@@ -74,12 +70,12 @@ import TextCard from "@/components/TextCard.vue";
 
 export default {
   components: {
-    TextCard
+    TextCard,
   },
   head() {
     return {
-      title: "当サイトについて"
+      title: "当サイトについて",
     };
-  }
+  },
 };
 </script>
