@@ -25,7 +25,7 @@ import NavigationForXS from "@/components/NavigationForXS.vue";
 export default {
   components: {
     NavigationForMoreSM,
-    NavigationForXS
+    NavigationForXS,
   },
   data() {
     return {
@@ -38,19 +38,19 @@ export default {
         {
           title: "よくある質問",
           to: "/faq",
-          icon: "mdi-frequently-asked-questions"
+          icon: "mdi-frequently-asked-questions",
         },
         {
           title: "当サイトについて",
           to: "/about",
-          icon: "mdi-information-outline"
-        }
-      ]
+          icon: "mdi-information-outline",
+        },
+      ],
     };
   },
   mounted() {
     this.loading = false;
-  }
+  },
 };
 </script>
 
