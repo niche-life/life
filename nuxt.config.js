@@ -84,7 +84,10 @@ export default {
   /*
    ** Nuxt.js dev-modules
    */
-  buildModules: ["@nuxtjs/vuetify"],
+  buildModules: [
+    "@nuxtjs/vuetify",
+    ["@nuxtjs/google-analytics", { id: "UA-44444955-1" }],
+  ],
   /*
    ** Nuxt.js modules
    */
