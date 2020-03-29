@@ -205,12 +205,12 @@ import TextCard from "@/components/TextCard.vue";
 
 export default {
   components: {
-    TextCard
+    TextCard,
   },
   head() {
     return {
-      title: "投稿規定"
+      title: "投稿規定",
     };
-  }
+  },
 };
 </script>
