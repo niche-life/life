@@ -6,10 +6,6 @@
       </v-card-title>
       <v-divider></v-divider>
       <v-card-subtitle>
-        <v-btn outlined :to="{ name: 'series-id', params: { id: items.no } }">
-          <v-icon small>fas fa-info-circle</v-icon>
-          &nbsp;詳細</v-btn
-        >
         <v-btn
           outlined
           :href="getPdfUrl(items.url)"
