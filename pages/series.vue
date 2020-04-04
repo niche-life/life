@@ -14,17 +14,17 @@ import Magazine from "@/data/magazineData.json";
 
 export default {
   components: {
-    MagazineCard
+    MagazineCard,
   },
   data() {
     return {
-      magazineData: Magazine.magazineData
+      magazineData: Magazine.magazineData,
     };
   },
   head() {
     return {
-      title: "巻号一覧"
+      title: "巻号一覧",
     };
-  }
+  },
 };
 </script>

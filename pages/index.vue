@@ -32,17 +32,17 @@ import WhatsNew from "@/components/WhatsNew.vue";
 export default {
   components: {
     TextCard,
-    WhatsNew
+    WhatsNew,
   },
   data() {
     return {
-      newsItems: News.newsItems.slice(0, 3)
+      newsItems: News.newsItems.slice(0, 3),
     };
   },
   head() {
     return {
-      title: "トップ"
+      title: "トップ",
     };
-  }
+  },
 };
 </script>

@@ -13,12 +13,12 @@ import TextCard from "@/components/TextCard.vue";
 
 export default {
   components: {
-    TextCard
+    TextCard,
   },
   head() {
     return {
-      title: "よくある質問"
+      title: "よくある質問",
     };
-  }
+  },
 };
 </script>

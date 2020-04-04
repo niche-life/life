@@ -35,13 +35,13 @@ export default {
   props: {
     items: {
       type: Array,
-      required: true
-    }
+      required: true,
+    },
   },
   data() {
     return {
       s3baseUrl:
-        "https://nichelife-media.s3-ap-northeast-1.amazonaws.com/paper/"
+        "https://nichelife-media.s3-ap-northeast-1.amazonaws.com/paper/",
     };
   },
   methods: {
@@ -56,8 +56,8 @@ export default {
     getPaperText(article) {
       var author = article.author ? " (" + article.author + ")" : "";
       return article.page + ": " + article.title + author;
-    }
-  }
+    },
+  },
 };
 </script>
 
