@@ -37,6 +37,11 @@
         </v-row>
       </v-card-text>
     </v-card>
+    <br />
+    <v-btn outlined to="/series">
+      <v-icon small>fas fa-arrow-circle-left</v-icon>
+      &nbsp;一覧に戻る</v-btn
+    >
   </div>
 </template>
 
