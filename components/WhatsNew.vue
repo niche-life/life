@@ -9,14 +9,18 @@
           最新のお知らせ
         </h4>
       </v-card-title>
-      <v-card-text>
-        <div v-for="(item, i) in items" :key="i">
-          <nuxt-link class="WhatsNew-item" :to="getNewsUrl(item)">
-            <time>{{ item.date }}</time>
-            <span>{{ item.text }}</span>
-          </nuxt-link>
-        </div>
-      </v-card-text>
+      <div class="WhatsNewsText">
+        <v-card-text>
+          <div v-for="(item, i) in items" :key="i">
+            <p>
+              <nuxt-link class="WhatsNew-item" :to="getNewsUrl(item)">
+                <time>{{ item.date }}</time>
+                <span>{{ item.text }}</span>
+              </nuxt-link>
+            </p>
+          </div>
+        </v-card-text>
+      </div>
     </v-card>
   </div>
 </template>
@@ -42,6 +46,9 @@ export default {
 
 <style lang="scss">
 .WhatsNew {
-  padding: 10px;
+  padding: 6px;
+}
+.WhatsNewsText {
+  margin: 0 10pt 0 10pt;
 }
 </style>
