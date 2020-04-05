@@ -75,16 +75,16 @@ export default {
         {
           icon: "fab fa-twitter",
           url: "https://twitter.com/nichelife_tw",
-          color: "blue"
+          color: "blue",
         },
         {
           icon: "fab fa-github",
           url: "https://github.com/niche-life/life",
-          color: "black"
-        }
-      ]
+          color: "black",
+        },
+      ],
     };
-  }
+  },
 };
 </script>
 

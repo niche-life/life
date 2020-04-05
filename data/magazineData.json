@@ -1,6 +1,7 @@
 {
   "magazineData": [
     {
+      "no": 6,
       "series": "ニッチェ・ライフ 第6号",
       "publishedDate": "2019/05/31",
       "url": "006/Niche006.pdf",
@@ -39,6 +40,7 @@
       ]
     },
     {
+      "no": 5,
       "series": "ニッチェ・ライフ 第5号",
       "url": "005/Niche005.pdf",
       "publishedDate": "2017/12/31",
@@ -83,6 +85,7 @@
       ]
     },
     {
+      "no": 4,
       "series": "ニッチェ・ライフ 第4号",
       "url": "004/Niche004.pdf",
       "publishedDate": "2016/12/31",
@@ -133,6 +136,7 @@
       ]
     },
     {
+      "no": 3,
       "series": "ニッチェ・ライフ 第3号",
       "url": "003/Niche003.pdf",
       "publishedDate": "2015/12/31",
@@ -171,6 +175,7 @@
       ]
     },
     {
+      "no": 2,
       "series": "ニッチェ・ライフ 第2号",
       "url": "002/Niche002.pdf",
       "publishedDate": "2014/12/31",
@@ -221,6 +226,7 @@
       ]
     },
     {
+      "no": 1,
       "series": "ニッチェ・ライフ 第1号",
       "url": "001/Niche001.pdf",
       "publishedDate": "2013/9/30",

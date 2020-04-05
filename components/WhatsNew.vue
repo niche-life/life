@@ -26,17 +26,17 @@ export default {
   props: {
     items: {
       type: Array,
-      required: true
-    }
+      required: true,
+    },
   },
   methods: {
-    getNewsUrl: function(item) {
+    getNewsUrl: function (item) {
       if (item.url) {
         return "/" + item.url;
       }
       return "news/" + item.date;
-    }
-  }
+    },
+  },
 };
 </script>
 
