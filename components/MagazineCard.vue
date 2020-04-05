@@ -1,6 +1,6 @@
 <template>
   <div class="MagazineCard">
-    <v-card>
+    <v-card outlined>
       <v-card-title>
         {{ items.series }}
       </v-card-title>
@@ -11,6 +11,7 @@
           &nbsp;詳細</v-btn
         >
         <v-btn
+          color="red"
           outlined
           :href="getPdfUrl(items.url)"
           target="_blank"

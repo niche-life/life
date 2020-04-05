@@ -2,13 +2,10 @@
   <div class="NavigationComponent">
     <v-list-item>
       <v-list-item-content>
-        <v-list-item-title class="title">
+        <v-list-item-title class="navTitle">
           ニッチェ・ライフ<br />
           Niche Life
         </v-list-item-title>
-        <v-list-item-subtitle>
-          the open access journal about biodiversity for all bio-lovers
-        </v-list-item-subtitle>
       </v-list-item-content>
     </v-list-item>
 
@@ -79,4 +76,10 @@ export default {
 };
 </script>
 
-<style lang="scss"></style>
+<style lang="scss">
+.navTitle {
+  font-size: 25px;
+  font-weight: 900;
+  padding: 5px;
+}
+</style>

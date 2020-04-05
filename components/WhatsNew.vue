@@ -1,13 +1,13 @@
 <template>
   <div class="WhatsNew">
-    <v-card>
+    <v-card outlined>
       <v-card-title>
-        <h4>
-          <v-icon size="25">
+        <h3>
+          <v-icon size="30">
             mdi-information
           </v-icon>
           最新のお知らせ
-        </h4>
+        </h3>
       </v-card-title>
       <div class="WhatsNewsText">
         <v-card-text>
@@ -46,7 +46,7 @@ export default {
 
 <style lang="scss">
 .WhatsNew {
-  padding: 6px;
+  padding: 15px 6px 6px 6px;
 }
 .WhatsNewsText {
   margin: 0 10pt 0 10pt;
