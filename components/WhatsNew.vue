@@ -1,23 +1,16 @@
 <template>
   <div class="WhatsNew">
-    <v-card>
-      <v-card-title>
-        <h4>
-          <v-icon size="20">
-            mdi-information
-          </v-icon>
-          最新のお知らせ
-        </h4>
-      </v-card-title>
+    <v-card outlined color="#fff2f7">
       <div class="WhatsNewsText">
         <v-card-text>
           <div v-for="(item, i) in items" :key="i">
-            <p>
-              <nuxt-link class="WhatsNew-item" :to="getNewsUrl(item)">
-                <time>{{ item.date }}</time>
-                <span>{{ item.text }}</span>
-              </nuxt-link>
-            </p>
+            <v-icon size="20">
+              mdi-information
+            </v-icon>
+            <nuxt-link class="WhatsNew-item" :to="getNewsUrl(item)">
+              <time>{{ item.date }}</time>
+              <span>{{ item.text }}</span>
+            </nuxt-link>
           </div>
         </v-card-text>
       </div>
@@ -46,9 +39,13 @@ export default {
 
 <style lang="scss">
 .WhatsNew {
-  padding: 6px;
+  padding: 12px 6px 6px 6px;
 }
 .WhatsNewsText {
-  margin: 0 10pt 0 10pt;
+  margin: 0 0 0 0;
+}
+.WhatsNew-item {
+  margin: 0 0 0 0;
+  font-size: 18px;
 }
 </style>

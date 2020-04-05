@@ -1,9 +1,10 @@
 <template>
   <div class="TextCard">
-    <v-card>
+    <v-card outlined>
       <v-card-title v-if="title">
         {{ title }}
       </v-card-title>
+      <v-divider></v-divider>
       <div class="TextCardText">
         <v-card-text>
           <slot />

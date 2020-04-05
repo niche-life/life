@@ -49,7 +49,7 @@ export default {
   },
   data() {
     return {
-      newsItems: News.newsItems.slice(0, 3),
+      newsItems: News.newsItems.slice(0, 1),
     };
   },
   head() {
