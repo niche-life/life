@@ -6,6 +6,25 @@ a {
   text-decoration: none;
 }
 
+p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+li {
+  font-size: 18px;
+}
+
+ul,
+li {
+  padding: 4pt 0 4pt 0;
+  line-height: 1.5;
+}
+
+ul li {
+  padding-left: 7pt;
+}
+
 a:hover {
   text-decoration: underline;
 }

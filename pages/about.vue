@@ -3,26 +3,32 @@
     <h2>当サイトについて</h2>
 
     <TextCard title="ブラウザ環境について">
-      当サイトは以下の環境でご覧いただくことを推奨いたします。<br />
-      <br />
-      Microsoft Edge 最新版<br />
-      Mozilla Firefox 最新版<br />
-      Google Chrome 最新版 (Windows10以上)<br />
-      Apple Safari (OS X) 最新版<br />
-      Opera Software ASA Opera 最新版<br />
-      <br />
+      <p>
+        当サイトは以下の環境でご覧いただくことを推奨いたします。<br />
+        <br />
+        Microsoft Edge 最新版<br />
+        Mozilla Firefox 最新版<br />
+        Google Chrome 最新版 (Windows10以上)<br />
+        Apple Safari (OS X) 最新版<br />
+        Opera Software ASA Opera 最新版<br />
+      </p>
     </TextCard>
 
     <TextCard title="当サイトへのリンクについて">
-      当サイトへのリンクは自由です。
+      <p>
+        当サイトへのリンクは自由です。
+      </p>
     </TextCard>
 
     <TextCard title="Google Analyticsの利用について">
-      Webページを訪問したユーザーの興味により適したコンテンツを提供するための参考として、Webページの訪問状況を把握し分析するために、Google社が提供するGoogle
-      Analyticsを利用しています。<br />
-      Google
-      Analyticsの利用規約及びプライバシーポリシーに関する説明については、Google
-      Analyticsのサイトをご覧ください。<br />
+      <p>
+        Webページを訪問したユーザーの興味により適したコンテンツを提供するための参考として、Webページの訪問状況を把握し分析するために、Google社が提供するGoogle
+        Analyticsを利用しています。<br />
+        Google
+        Analyticsの利用規約及びプライバシーポリシーに関する説明については、Google
+        Analyticsのサイトをご覧ください。<br />
+      </p>
+
       <ul>
         <li>
           <a
@@ -55,12 +61,14 @@
     </TextCard>
 
     <TextCard title="ソースコードについて">
-      詳しくは<a
-        href="https://github.com/niche-life/life"
-        target="_blank"
-        rel="noopener"
-        >GitHubリポジトリ</a
-      >をご確認ください。
+      <p>
+        詳しくは<a
+          href="https://github.com/niche-life/life"
+          target="_blank"
+          rel="noopener"
+          >GitHubリポジトリ</a
+        >をご確認ください。
+      </p>
     </TextCard>
   </div>
 </template>
