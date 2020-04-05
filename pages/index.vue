@@ -71,7 +71,7 @@ export default {
     margin-bottom: 10pt;
   }
   p {
-    margin-bottom: 7pt;
+    margin: 0 10pt 7pt 10pt;
   }
 }
 </style>
