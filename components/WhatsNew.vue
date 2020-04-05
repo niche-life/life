@@ -3,7 +3,7 @@
     <v-card>
       <v-card-title>
         <h4>
-          <v-icon size="20">
+          <v-icon size="25">
             mdi-information
           </v-icon>
           最新のお知らせ
