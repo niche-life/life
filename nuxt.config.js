@@ -87,11 +87,21 @@ export default {
   buildModules: [
     "@nuxtjs/vuetify",
     ["@nuxtjs/google-analytics", { id: "UA-44444955-1" }],
+    "@nuxtjs/sitemap",
   ],
   /*
    ** Nuxt.js modules
    */
   modules: [],
+  /*
+   ** Sitemap module
+   */
+  sitemap: {
+    path: "/sitemap.xml",
+    hostname: "https://niche-life.com",
+    exclude: ["/admin"],
+    routes: [],
+  },
   /*
    ** vuetify module configuration
    ** https://github.com/nuxt-community/vuetify-module
