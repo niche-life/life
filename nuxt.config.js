@@ -49,7 +49,7 @@ export default {
       {
         hid: "twitter:card",
         name: "twitter:card",
-        content: "summary_large_image",
+        content: "summary",
       },
       {
         hid: "twitter:site",
@@ -64,7 +64,7 @@ export default {
       {
         hid: "twitter:image",
         name: "twitter:image",
-        content: "", // TODO
+        content: "/twitter_img.png",
       },
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
