@@ -100,7 +100,15 @@ export default {
     path: "/sitemap.xml",
     hostname: "https://niche-life.com",
     exclude: ["/admin"],
-    routes: [],
+    routes: [
+      "/series/1",
+      "/series/2",
+      "/series/3",
+      "/series/4",
+      "/series/5",
+      "/series/6",
+      "/series/7",
+    ],
   },
   /*
    ** vuetify module configuration
