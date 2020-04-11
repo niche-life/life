@@ -55,8 +55,7 @@ export default {
   },
   data() {
     return {
-      s3baseUrl:
-        "https://nichelife-media.s3-ap-northeast-1.amazonaws.com/paper/",
+      s3baseUrl: "https://media.niche-life.com/series/",
     };
   },
   methods: {
