@@ -2,13 +2,10 @@
   <div class="NavigationComponent">
     <v-list-item>
       <v-list-item-content>
-        <v-list-item-title class="title">
+        <v-list-item-title class="navTitle">
           ニッチェ・ライフ<br />
           Niche Life
         </v-list-item-title>
-        <v-list-item-subtitle>
-          the open access journal about biodiversity for all bio-lovers
-        </v-list-item-subtitle>
       </v-list-item-content>
     </v-list-item>
 
@@ -42,15 +39,6 @@
     <v-divider></v-divider>
 
     <v-list-item>
-      <v-switch
-        v-model="$vuetify.theme.dark"
-        label="ダークモードに変更"
-      ></v-switch>
-    </v-list-item>
-
-    <v-divider></v-divider>
-
-    <v-list-item>
       ISSN (Online) 2188-0972
     </v-list-item>
 
@@ -75,17 +63,23 @@ export default {
         {
           icon: "fab fa-twitter",
           url: "https://twitter.com/nichelife_tw",
-          color: "blue"
+          color: "blue",
         },
         {
           icon: "fab fa-github",
           url: "https://github.com/niche-life/life",
-          color: "black"
-        }
-      ]
+          color: "black",
+        },
+      ],
     };
-  }
+  },
 };
 </script>
 
-<style lang="scss"></style>
+<style lang="scss">
+.navTitle {
+  font-size: 25px;
+  font-weight: 900;
+  padding: 5px;
+}
+</style>

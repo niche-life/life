@@ -16,13 +16,13 @@ import NavigationContent from "@/components/NavigationContent.vue";
 
 export default {
   components: {
-    NavigationContent
+    NavigationContent,
   },
   props: ["links"],
   data() {
     return {
-      drawer: false
+      drawer: false,
     };
-  }
+  },
 };
 </script>

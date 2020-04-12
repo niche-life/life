@@ -1,17 +1,12 @@
 <template>
   <div class="MagazineCard">
-    <v-card outlined>
+    <v-card>
       <v-card-title>
         {{ items.series }}
       </v-card-title>
       <v-divider></v-divider>
       <v-card-subtitle>
-        <v-btn outlined :to="{ name: 'series-id', params: { id: items.no } }">
-          <v-icon small>fas fa-info-circle</v-icon>
-          &nbsp;詳細</v-btn
-        >
         <v-btn
-          color="red"
           outlined
           :href="getPdfUrl(items.url)"
           target="_blank"
@@ -42,6 +37,11 @@
         </v-row>
       </v-card-text>
     </v-card>
+    <br />
+    <v-btn outlined to="/series">
+      <v-icon small>fas fa-arrow-circle-left</v-icon>
+      &nbsp;一覧に戻る</v-btn
+    >
   </div>
 </template>
 
@@ -55,7 +55,7 @@ export default {
   },
   data() {
     return {
-      s3baseUrl: this.$conf.s3_bucket_url + "/series/",
+      s3baseUrl: "https://media.niche-life.com/series/",
     };
   },
   methods: {
