@@ -44,7 +44,7 @@ export default {
       {
         hid: "og:image",
         property: "og:image",
-        content: "", // TODO
+        content: "/twitter_img.png",
       },
       {
         hid: "twitter:card",
