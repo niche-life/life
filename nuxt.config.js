@@ -64,7 +64,7 @@ export default {
       {
         hid: "twitter:image",
         name: "twitter:image",
-        content: "/twitter_img.png",
+        content: "https://niche-life.com/twitter_img.png",
       },
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
