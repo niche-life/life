@@ -55,7 +55,7 @@ export default {
   },
   data() {
     return {
-      s3baseUrl: "https://media.niche-life.com/series/",
+      s3baseUrl: this.$conf.s3_bucket_url + "/series/",
     };
   },
   methods: {
@@ -64,7 +64,7 @@ export default {
       return url;
     },
     getThunmbnailUrl(path) {
-      var url = require("@/assets/" + path);
+      var url = require(this.$conf.s3_bucket_url + "/thumbnail/" + path);
       return url;
     },
     getPaperText(article) {

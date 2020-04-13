@@ -64,7 +64,7 @@ export default {
       return url;
     },
     getThunmbnailUrl(path) {
-      var url = require("@/assets/" + path);
+      var url = this.$conf.s3_bucket_url + "/thumbnail/" + path;
       return url;
     },
     getPaperText(article) {
