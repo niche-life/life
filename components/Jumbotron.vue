@@ -6,14 +6,14 @@
       :height="[$vuetify.breakpoint.xsOnly ? '70vh' : '70vh']"
     >
       <v-container fill-height fluid :px-12="$vuetify.breakpoint.mdAndUp">
-        <v-row align="top" class="green--text text--accent-1 pa-4 fill-height">
+        <v-row align="top" class="teal--text text--darken-4 pa-4 fill-height">
           <v-col>
             <div
               class="mb-4"
               :class="[
                 $vuetify.breakpoint.xsOnly
-                  ? 'headline'
-                  : 'display-2 font-weight-light',
+                  ? 'headline font-weight-bold'
+                  : 'display-2 font-weight-bold',
               ]"
             >
               すべての生き物好きのための生物雑誌
@@ -24,7 +24,9 @@
             >
               ニッチェ・ライフ
             </h1>
-            <div class="mb-4">ISSN (Online) 2188-0972</div>
+            <div class="mb-4 subtitle-1">
+              ISSN (Online) 2188-0972
+            </div>
           </v-col>
         </v-row>
       </v-container>

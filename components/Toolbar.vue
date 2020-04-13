@@ -6,22 +6,25 @@
     elevate-on-scroll
     :color="!isScrolling ? 'teal' : 'teal'"
   >
-    <v-img max-width="3%" src="/twitter_img.png" class="shrink" />
     <v-spacer />
+    <v-divider vertical />
     <template v-if="$vuetify.breakpoint.mdAndUp">
       <v-toolbar-items>
         <template v-for="(item, i) in items">
           <v-btn :key="i" :to="item.path" text>
-            <span v-text="item.text" />
+            <span class="body-1 font-weight-bold" v-text="item.text" />
           </v-btn>
           <v-divider vertical />
         </template>
+        <v-btn v-for="icon in icons" :key="icon" class="mx-2 white--text" icon>
+          <v-icon size="30px" v-text="icon" />
+        </v-btn>
       </v-toolbar-items>
     </template>
     <v-menu v-else>
       <template v-slot:activator="{ on }">
         <v-btn icon v-on="on">
-          <v-icon>mdi-menu</v-icon>
+          <v-icon size="35px">mdi-menu</v-icon>
         </v-btn>
       </template>
       <v-card color="primary" dark>
@@ -42,6 +45,7 @@
 export default {
   data: () => ({
     isScrolling: false,
+    icons: ["fab fa-twitter", "fab fa-github"],
     items: [
       {
         path: "/",
