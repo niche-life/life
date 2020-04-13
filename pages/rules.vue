@@ -1,7 +1,5 @@
 <template>
   <div class="Rule">
-    <h2>投稿規定</h2>
-
     <TextCard title="投稿区分">
       <ol>
         <li>

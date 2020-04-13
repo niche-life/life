@@ -1,51 +1,34 @@
 <template>
-  <v-app class="app">
+  <v-app>
     <div v-if="loading" class="loader">
       now loading...
     </div>
     <div v-else class="appContainer">
-      <NavigationForMoreSM
-        :links="links"
-        v-if="!$vuetify.breakpoint.smAndDown"
-      />
-      <NavigationForXS :links="links" v-else />
+      <Toolbar />
       <v-content>
-        <v-container>
-          <nuxt />
-        </v-container>
+        <Jumbotron />
+        <nuxt />
+        <Footer />
       </v-content>
     </div>
   </v-app>
 </template>
 
 <script>
-import NavigationForMoreSM from "@/components/NavigationForMoreSM.vue";
-import NavigationForXS from "@/components/NavigationForXS.vue";
+import Jumbotron from "@/components/Jumbotron.vue";
+import Toolbar from "@/components/Toolbar.vue";
+import Footer from "@/components/Footer.vue";
 
 export default {
   components: {
-    NavigationForMoreSM,
-    NavigationForXS,
+    Toolbar,
+    Footer,
+    Jumbotron,
   },
   data() {
     return {
       loading: true,
       title: "ニッチェライフ - Niche Life",
-      links: [
-        { title: "トップ", to: "/", icon: "mdi-home" },
-        { title: "巻・号一覧", to: "/series", icon: "mdi-bookshelf" },
-        { title: "投稿規定", to: "/rules", icon: "mdi-pencil-ruler" },
-        {
-          title: "よくある質問",
-          to: "/faq",
-          icon: "mdi-frequently-asked-questions",
-        },
-        {
-          title: "当サイトについて",
-          to: "/about",
-          icon: "mdi-information-outline",
-        },
-      ],
     };
   },
   mounted() {
@@ -55,16 +38,6 @@ export default {
 </script>
 
 <style lang="scss">
-.app {
-  max-width: 1440px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.body {
-  background-color: black;
-}
-
 .loader {
   height: 200px;
   width: 150px;

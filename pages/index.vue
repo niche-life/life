@@ -1,7 +1,5 @@
 <template>
   <div class="Index">
-    <v-img src="/nichetit.jpg"> </v-img>
-
     <WhatsNew :items="newsItems" />
 
     <TextCard>
