@@ -1,6 +1,34 @@
 <template>
   <div class="Jumbotron">
-    <v-img v-if="this.namespace === 'index'" src="/nichetit.jpg"> </v-img>
+    <v-img
+      v-if="this.namespace === 'index'"
+      src="/top.jpg"
+      :height="[$vuetify.breakpoint.xsOnly ? '70vh' : '70vh']"
+    >
+      <v-container fill-height fluid :px-12="$vuetify.breakpoint.mdAndUp">
+        <v-row align="top" class="green--text text--accent-1 pa-4 fill-height">
+          <v-col>
+            <div
+              class="mb-4"
+              :class="[
+                $vuetify.breakpoint.xsOnly
+                  ? 'headline'
+                  : 'display-2 font-weight-light',
+              ]"
+            >
+              すべての生き物好きのための生物雑誌
+            </div>
+            <h1
+              class="font-weight-black mb-4"
+              :class="[$vuetify.breakpoint.xsOnly ? 'display-1' : 'display-3']"
+            >
+              ニッチェ・ライフ
+            </h1>
+            <div class="mb-4">ISSN (Online) 2188-0972</div>
+          </v-col>
+        </v-row>
+      </v-container>
+    </v-img>
     <v-sheet
       v-else
       :min-height="$vuetify.breakpoint.smAndDown ? '45vh' : '300px'"
