@@ -1,9 +1,9 @@
 [build]
   publish = "dist"
-  command = "yarn install; yarn run generate; cp ./env/robots.noprod.txt ./dist/robots.txt"
+  command = "yarn install; yarn run generate; cp ./env/robots.noprod.txt ./dist/robots.txt; cp ./env/_redirects ./dist/_redirects"
 
 [context.production]
-  command = "yarn install; yarn run generate; cp ./env/robots.prod.txt ./dist/robots.txt"
+  command = "yarn install; yarn run generate; cp ./env/robots.prod.txt ./dist/robots.txt; cp ./env/_redirects ./dist/_redirects"
 
 [[redirects]]
   from = "/submission.html"
