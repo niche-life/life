@@ -7,7 +7,6 @@
       <v-card-text>
         <v-btn rounded>お問い合わせ</v-btn>
       </v-card-text>
-      <br />
       <v-card-text>
         <v-btn v-for="icon in icons" :key="icon" class="mx-4 white--text" icon>
           <v-icon size="40px">{{ icon }}</v-icon>

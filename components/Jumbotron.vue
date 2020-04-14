@@ -7,7 +7,7 @@
       gradient="to top, rgba(0,0,0,0), rgba(25,32,72,0.4)"
     >
       <v-container fill-height fluid :px-12="$vuetify.breakpoint.mdAndUp">
-        <v-row align="top" class="lime--text text--accent-4 pa-4 fill-height">
+        <v-row align="top" class="teal--text text--accent-1 pa-4 fill-height">
           <v-col>
             <div
               class="mb-4"

@@ -27,7 +27,7 @@
           <v-icon size="35px">mdi-menu</v-icon>
         </v-btn>
       </template>
-      <v-card color="primary" dark>
+      <v-card color="teal" dark>
         <v-list color="transparent">
           <template v-for="(item, i) in items">
             <v-list-item :key="i" :to="item.path">
