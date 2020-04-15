@@ -1,11 +1,15 @@
 <template>
-  <v-img
-    :src="src"
-    :height="[$vuetify.breakpoint.xsOnly ? '100vh' : '60vh']"
-    gradient="to top right, rgba(100,115,201,.33), rgba(25,32,72,.7)"
-  >
-    <v-container fill-height fluid :px-12="$vuetify.breakpoint.mdAndUp">
-      <v-row align="top" class="white--text text--accent-1 ma-4 fill-height">
+  <v-container fluid style="padding: 0px;">
+    <v-img
+      :src="src"
+      gradient="to top right, rgba(100,115,201,.33), rgba(25,32,72,.7)"
+      :max-height="[$vuetify.breakpoint.xsOnly ? '360vh' : '60vh']"
+    >
+      <v-row
+        align="top"
+        class="white--text text--accent-1 fill-height"
+        :class="[$vuetify.breakpoint.xsOnly ? 'ma-4' : 'ma-8']"
+      >
         <v-col>
           <div
             class="my-4"
@@ -20,8 +24,8 @@
             <slot />
           </div>
         </v-col>
-      </v-row> </v-container
-  ></v-img>
+      </v-row> </v-img
+  ></v-container>
 </template>
 
 <script>
