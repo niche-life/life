@@ -41,9 +41,9 @@
       <v-container fill-height>
         <v-row align-content="center" justify="center" class="fill-height">
           <v-col cols="12">
-            <h1 class="display-2 text-center" v-text="contents.title" />
+            <h1 class="display-1 text-center" v-text="contents.title" />
             <br />
-            <p class="text-center" v-text="contents.desc"></p>
+            <p class="text-center" v-html="contents.desc"></p>
           </v-col>
         </v-row>
       </v-container>
@@ -94,6 +94,11 @@ export default {
             title: "当サイトについて",
             desc:
               "ここに説明や導線用のボタン等がが入ります。ここに説明や導線用のボタン等がが入ります。",
+          };
+        case "contact":
+          return {
+            title: "お問い合わせ",
+            desc: "",
           };
         default:
           return "";

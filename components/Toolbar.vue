@@ -67,6 +67,10 @@ export default {
         path: "/about",
         text: "当サイトについて",
       },
+      {
+        path: "/contact",
+        text: "お問い合わせ",
+      },
     ],
   }),
 
