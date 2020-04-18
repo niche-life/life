@@ -1,5 +1,6 @@
 <template>
   <div class="Index">
+    <SeriesShowCase />
     <ImageTile src="/top3.jpg" title="オープンアクセス・投稿無料">
       <p>
         『ニッチェ・ライフ』誌は、誰でも無料で読めるウェブ生物雑誌です。あなたの調査研究活動の成果や、生き物の魅力を広く伝えるための記事を集めて発行しています。
@@ -10,7 +11,7 @@
       <p>
         投稿・掲載料は無料です。投稿規定をご確認の上、生物に関する記事をご投稿下さい。生き物好きの皆様、研究者の皆様からの投稿をお待ちしております。
       </p>
-      <v-btn class="ma-4 font-weight-bold" dark outlined x-large>
+      <v-btn class="ma-4 font-weight-bold" dark outlined x-large to="/rules">
         投稿について
       </v-btn>
     </ImageTile>
@@ -35,11 +36,13 @@
 import News from "@/data/news.json";
 import WhatsNew from "@/components/WhatsNew.vue";
 import ImageTile from "@/components/ImageTile.vue";
+import SeriesShowCase from "@/components/SeriesShowCase.vue";
 
 export default {
   components: {
     WhatsNew,
     ImageTile,
+    SeriesShowCase,
   },
   data() {
     return {
