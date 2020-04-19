@@ -1,11 +1,18 @@
 <template>
-  <div class="AboutUs">
-    <v-row>
-      <v-col v-for="member in memberList" :key="member.name" cols="3">
-        <MemberCard :items="member" />
-      </v-col>
-    </v-row>
-  </div>
+  <v-container>
+    <div class="Member">
+      <v-row class="my-4">
+        <v-col
+          v-for="member in memberList"
+          :key="member.name"
+          align="center"
+          justify="center"
+        >
+          <MemberCard :items="member" />
+        </v-col>
+      </v-row>
+    </div>
+  </v-container>
 </template>
 
 <script>

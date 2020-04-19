@@ -1,12 +1,12 @@
 <template>
-  <div class="MemberCard">
-    <v-card>
-      <v-img :src="items.src" height="300px"></v-img>
-    </v-card>
-    <v-card-title v-text="items.name"></v-card-title>
-    <v-card-subtitle v-text="items.role"></v-card-subtitle>
-    <v-card-text v-text="items.specialist"></v-card-text>
-  </div>
+  <v-card width="300" class="mx-auto" tile flat>
+    <v-container>
+      <v-img :src="items.src" height="300"></v-img>
+      <v-card-title v-text="items.name" class="text-left"></v-card-title>
+      <v-card-subtitle v-text="items.role" class="text-left"></v-card-subtitle>
+      <v-card-text v-text="items.specialist" class="text-left"></v-card-text>
+    </v-container>
+  </v-card>
 </template>
 
 <script>
