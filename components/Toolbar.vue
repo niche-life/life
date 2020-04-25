@@ -60,7 +60,7 @@ export default {
         text: "投稿規定",
       },
       {
-        path: "/member",
+        path: "/members",
         text: "編集委員",
       },
       {
