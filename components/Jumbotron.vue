@@ -83,7 +83,7 @@ export default {
             desc:
               "ここに説明や導線用のボタン等がが入ります。ここに説明や導線用のボタン等がが入ります。",
           };
-        case "member":
+        case "members":
           return {
             title: "私達について",
             desc:
