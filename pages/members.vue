@@ -3,7 +3,7 @@
     <v-row class="my-4">
       <v-col
         v-for="member in memberList"
-        :key="member.name"
+        :key="member.id"
         align="center"
         justify="center"
       >

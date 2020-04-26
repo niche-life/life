@@ -3,10 +3,9 @@
     <v-img
       :src="src"
       gradient="to top right, rgba(100,115,201,.33), rgba(25,32,72,.7)"
-      :max-height="[$vuetify.breakpoint.xsOnly ? '360vh' : '60vh']"
+      :max-height="$vuetify.breakpoint.xsOnly ? '360vh' : '60vh'"
     >
       <v-row
-        align="top"
         class="white--text text--accent-1 fill-height"
         :class="[$vuetify.breakpoint.xsOnly ? 'ma-4' : 'ma-8']"
       >

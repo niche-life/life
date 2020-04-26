@@ -13,7 +13,7 @@
 export default {
   props: {
     items: {
-      type: Array,
+      type: Object,
       required: true,
     },
   },

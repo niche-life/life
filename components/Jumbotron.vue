@@ -3,11 +3,11 @@
     <v-img
       v-if="this.namespace === 'index'"
       :src="require('@/assets/index/top.jpg')"
-      :height="[$vuetify.breakpoint.xsOnly ? '80vh' : '60vh']"
+      :height="$vuetify.breakpoint.xsOnly ? '80vh' : '60vh'"
       gradient="to top, rgba(0,0,0,0), rgba(25,32,72,0.4)"
     >
       <v-container fill-height fluid :px-12="$vuetify.breakpoint.mdAndUp">
-        <v-row align="top" class="teal--text text--accent-1 pa-4 fill-height">
+        <v-row class="teal--text text--accent-1 pa-4 fill-height">
           <v-col>
             <div
               class="mb-4"
