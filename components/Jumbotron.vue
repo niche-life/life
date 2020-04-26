@@ -100,8 +100,6 @@ export default {
             title: "お問い合わせ",
             desc: "",
           };
-        default:
-          return "";
       }
     },
   },
