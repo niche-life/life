@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <div v-if="loading" class="loader">
-      now loading...
+      <semipolar-spinner :animation-duration="2000" :size="65" color="green" />
     </div>
     <div v-else class="appContainer">
       <Toolbar />
@@ -18,12 +18,14 @@
 import Jumbotron from "@/components/Jumbotron.vue";
 import Toolbar from "@/components/Toolbar.vue";
 import Footer from "@/components/Footer.vue";
+import { SemipolarSpinner } from "epic-spinners";
 
 export default {
   components: {
     Toolbar,
     Footer,
     Jumbotron,
+    SemipolarSpinner,
   },
   data() {
     return {

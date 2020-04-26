@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@nuxtjs/sitemap": "^2.2.1",
+    "epic-spinners": "^1.1.0",
     "nuxt": "^2.12.2",
     "swiper": "^5.3.7",
     "vue-awesome-swiper": "^4.1.0",
