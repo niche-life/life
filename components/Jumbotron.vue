@@ -2,7 +2,7 @@
   <div class="Jumbotron">
     <v-img
       v-if="this.namespace === 'index'"
-      src="/top.jpg"
+      :src="require('@/assets/index/top.jpg')"
       :height="[$vuetify.breakpoint.xsOnly ? '80vh' : '60vh']"
       gradient="to top, rgba(0,0,0,0), rgba(25,32,72,0.4)"
     >

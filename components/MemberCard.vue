@@ -1,7 +1,7 @@
 <template>
   <v-card width="300" class="mx-auto" tile flat>
     <v-container>
-      <v-img :src="items.src" height="300"></v-img>
+      <v-img v-bind:src="getThunmbnailUrl(items.src)" height="300"></v-img>
       <v-card-title v-text="items.name" class="text-left"></v-card-title>
       <v-card-subtitle v-text="items.role" class="text-left"></v-card-subtitle>
       <v-card-text v-text="items.specialist" class="text-left"></v-card-text>
@@ -20,7 +20,12 @@ export default {
   data() {
     return {};
   },
-  methods: {},
+  methods: {
+    getThunmbnailUrl(path) {
+      var url = require("@/assets/members/" + path);
+      return url;
+    },
+  },
 };
 </script>
 

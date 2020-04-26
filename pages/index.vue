@@ -1,7 +1,10 @@
 <template>
   <div class="Index">
     <SeriesShowCase />
-    <ImageTile src="/top3.jpg" title="オープンアクセス・投稿無料">
+    <ImageTile
+      :src="require('@/assets/index/top3.jpg')"
+      title="オープンアクセス・投稿無料"
+    >
       <p>
         『ニッチェ・ライフ』誌は、誰でも無料で読めるウェブ生物雑誌です。あなたの調査研究活動の成果や、生き物の魅力を広く伝えるための記事を集めて発行しています。
       </p>
@@ -15,7 +18,10 @@
         投稿について
       </v-btn>
     </ImageTile>
-    <ImageTile src="/top4.jpg" title="ニッチェ・ライフの目的">
+    <ImageTile
+      :src="require('@/assets/index/top4.jpg')"
+      title="ニッチェ・ライフの目的"
+    >
       <p>
         「ニッチェ」とは、生態学用語で、ある生物が生活する環境や、そこでその生物が利用する資源のことを意味します。
       </p>
