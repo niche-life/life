@@ -18,7 +18,7 @@
 import Jumbotron from "@/components/Jumbotron.vue";
 import Toolbar from "@/components/Toolbar.vue";
 import Footer from "@/components/Footer.vue";
-import { SemipolarSpinner } from "epic-spinners";
+import SemipolarSpinner from "@/node_modules/epic-spinners/src/components/lib/SemipolarSpinner.vue";
 
 export default {
   components: {
