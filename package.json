@@ -11,7 +11,7 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
-    "@nuxtjs/sitemap": "^2.2.1",
+    "@nuxtjs/sitemap": "^2.3.2",
     "nuxt": "^2.12.2",
     "vue-property-decorator": "^8.4.0"
   },
