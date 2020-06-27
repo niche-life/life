@@ -17,8 +17,14 @@
           </v-btn>
           <v-divider vertical />
         </template>
-        <v-btn v-for="icon in icons" :key="icon" class="mx-2 white--text" icon>
-          <v-icon size="30px" v-text="icon" />
+        <v-btn
+          v-for="icon in icons"
+          :key="icon"
+          :href="icon.path"
+          class="mx-2 white--text"
+          icon
+        >
+          <v-icon size="30px" v-text="icon.icon" />
         </v-btn>
       </v-toolbar-items>
     </template>
@@ -46,7 +52,10 @@
 export default {
   data: () => ({
     isScrolling: false,
-    icons: ["fab fa-twitter", "fab fa-github"],
+    icons: [
+      { icon: "fab fa-twitter", path: "https://twitter.com/nichelife_tw" },
+      { icon: "fab fa-github", path: "https://github.com/niche-life/life" },
+    ],
     items: [
       {
         path: "/",
