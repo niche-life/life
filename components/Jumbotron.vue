@@ -62,38 +62,32 @@ export default {
         case "series":
           return {
             title: "巻号一覧",
-            desc:
-              "ここに説明や導線用のボタン等がが入ります。ここに説明や導線用のボタン等がが入ります。",
+            desc: "",
           };
         case "series-id":
           return {
             title: "巻号詳細",
-            desc:
-              "ここに説明や導線用のボタン等がが入ります。ここに説明や導線用のボタン等がが入ります。",
+            desc: "",
           };
         case "rules":
           return {
             title: "投稿規定",
-            desc:
-              "ここに説明や導線用のボタン等がが入ります。ここに説明や導線用のボタン等がが入ります。",
+            desc: "",
           };
         case "faq":
           return {
             title: "よくある質問",
-            desc:
-              "ここに説明や導線用のボタン等がが入ります。ここに説明や導線用のボタン等がが入ります。",
+            desc: "",
           };
         case "members":
           return {
-            title: "私達について",
-            desc:
-              "ここに説明や導線用のボタン等がが入ります。ここに説明や導線用のボタン等がが入ります。",
+            title: "編集委員一覧",
+            desc: "",
           };
         case "about":
           return {
             title: "当サイトについて",
-            desc:
-              "ここに説明や導線用のボタン等がが入ります。ここに説明や導線用のボタン等がが入ります。",
+            desc: "",
           };
         case "contact":
           return {

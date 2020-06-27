@@ -6,6 +6,7 @@
     elevate-on-scroll
     :color="!isScrolling ? 'teal' : 'teal'"
   >
+    <v-toolbar-title class="font-weight-bold">ニッチェ・ライフ</v-toolbar-title>
     <v-spacer />
     <v-divider vertical />
     <template v-if="$vuetify.breakpoint.mdAndUp">
