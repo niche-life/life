@@ -2,75 +2,83 @@
   "memberList": [
     {
       "id": 1,
-      "name": "田中　颯",
-      "role": "編集委員 / 運営",
+      "name": "熊澤辰徳",
+      "role": "編集委員長 / 運営・組版",
       "comment": "ほげほげ",
-      "specialist": "ウニ",
-      "src": "hayatetanaka.png"
+      "specialist": "双翅目・水生植物",
+      "src": "tatsunori-kumazawa.jpg"
     },
     {
       "id": 2,
-      "name": "田中　颯",
-      "role": "編集委員 / 運営",
+      "name": "大西　亘",
+      "role": "編集委員 / サブジェクトエディター",
       "comment": "ほげほげ",
-      "specialist": "ウニ",
-      "src": "hayatetanaka.png"
+      "specialist": "維管束植物",
+      "src": "no-image.jpg"
     },
     {
       "id": 3,
-      "name": "田中　颯",
+      "name": "神保宇嗣",
       "role": "編集委員 / 運営",
       "comment": "ほげほげ",
-      "specialist": "ウニ",
-      "src": "hayatetanaka.png"
+      "specialist": "鱗翅目",
+      "src": "no-image.jpg"
     },
     {
       "id": 4,
       "name": "田中　颯",
       "role": "編集委員 / 運営",
       "comment": "ほげほげ",
-      "specialist": "ウニ",
-      "src": "hayatetanaka.png"
+      "specialist": "ウニ綱",
+      "src": "hayate-tanaka.png"
     },
     {
       "id": 5,
-      "name": "田中　颯",
-      "role": "編集委員 / 運営",
+      "name": "中島　淳",
+      "role": "編集委員 / サブジェクトエディター",
       "comment": "ほげほげ",
-      "specialist": "ウニ",
-      "src": "hayatetanaka.png"
+      "specialist": "水生昆虫",
+      "src": "no-image.jpg"
     },
     {
       "id": 6,
-      "name": "田中　颯",
+      "name": "早川昌志",
       "role": "編集委員 / 運営",
       "comment": "ほげほげ",
-      "specialist": "ウニ",
-      "src": "hayatetanaka.png"
+      "specialist": "微生物",
+      "src": "masashi-hayakawa.jpg"
     },
     {
       "id": 7,
-      "name": "田中　颯",
-      "role": "編集委員 / 運営",
+      "name": "林　亮太",
+      "role": "編集委員 / サブジェクトエディター",
       "comment": "ほげほげ",
-      "specialist": "ウニ",
-      "src": "hayatetanaka.png"
+      "specialist": "蔓脚類他",
+      "src": "ryota-hayashi.jpg"
     },
     {
       "id": 8,
-      "name": "田中　颯",
-      "role": "編集委員 / 運営",
+      "name": "日比野友亮",
+      "role": "編集委員 / サブジェクトエディター",
       "comment": "ほげほげ",
-      "specialist": "ウニ",
-      "src": "hayatetanaka.png"
+      "specialist": "魚類",
+      "src": "yusuke-hibino.jpg"
     },
     {
       "id": 9,
-      "name": "田中　颯",
+      "name": "宮川　翼",
       "role": "編集委員 / 運営",
       "comment": "ほげほげ",
-      "specialist": "ウニ",
-      "src": "hayatetanaka.png"
+      "specialist": "",
+      "src": "no-image.jpg"
+    },
+    {
+      "id": 10,
+      "name": "吉富博之",
+      "role": "編集委員 / サブジェクトエディター・組版",
+      "comment": "ほげほげ",
+      "specialist": "水生甲虫他",
+      "src": "no-image.jpg"
     }
   ]
 }
