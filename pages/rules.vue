@@ -1,6 +1,7 @@
 <template>
   <div class="Rule">
-    <h2>投稿規定(2020年4月1日改訂)</h2>
+    <br />
+    <h3>2020年4月1日改訂</h3>
 
     <TextCard title="投稿区分">
       <ol>

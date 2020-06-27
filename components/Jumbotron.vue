@@ -34,16 +34,14 @@
     </v-img>
     <v-sheet
       v-else
-      :min-height="$vuetify.breakpoint.smAndDown ? '45vh' : '300px'"
-      color="grey lighten-3"
+      :min-height="$vuetify.breakpoint.smAndDown ? '20vh' : '100px'"
+      color="teal lighten-3"
       height="20vh"
     >
       <v-container fill-height>
         <v-row align-content="center" justify="center" class="fill-height">
           <v-col cols="12">
             <h1 class="display-1 text-center" v-text="contents.title" />
-            <br />
-            <p class="text-center" v-html="contents.desc"></p>
           </v-col>
         </v-row>
       </v-container>
