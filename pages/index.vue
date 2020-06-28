@@ -1,16 +1,10 @@
 <template>
   <div class="Index">
-    <v-img src="/nichetit.jpg"> </v-img>
-
-    <WhatsNew :items="newsItems" />
-
-    <TextCard>
-      <h1>
-        すべての生き物好きのための生物雑誌『ニッチェ・ライフ』
-      </h1>
-      <h2>
-        オープンアクセス・投稿無料の生き物雑誌
-      </h2>
+    <SeriesShowCase />
+    <ImageTile
+      :src="require('@/assets/index/top3.jpg')"
+      title="オープンアクセス・投稿無料"
+    >
       <p>
         『ニッチェ・ライフ』誌は、誰でも無料で読めるウェブ生物雑誌です。あなたの調査研究活動の成果や、生き物の魅力を広く伝えるための記事を集めて発行しています。
       </p>
@@ -20,7 +14,14 @@
       <p>
         投稿・掲載料は無料です。投稿規定をご確認の上、生物に関する記事をご投稿下さい。生き物好きの皆様、研究者の皆様からの投稿をお待ちしております。
       </p>
-      <h2>『ニッチェ・ライフ』の名前の由来と発行目的</h2>
+      <v-btn class="ma-4 font-weight-bold" dark outlined x-large to="/rules">
+        投稿について
+      </v-btn>
+    </ImageTile>
+    <ImageTile
+      :src="require('@/assets/index/top4.jpg')"
+      title="ニッチェ・ライフの目的"
+    >
       <p>
         「ニッチェ」とは、生態学用語で、ある生物が生活する環境や、そこでその生物が利用する資源のことを意味します。
       </p>
@@ -33,19 +34,21 @@
       <p>
         本誌は、そうした生き物の姿を、誰でも気軽に学術的な形で記録できる媒体となることを目指し、発行を行っています。本誌を読んだ皆さんが、その多様な生き様をもっと知りたい、その多様性の一端を明らかにしたい、多様性を次世代に残していきたいと感じていただければ幸いです。
       </p>
-    </TextCard>
+    </ImageTile>
   </div>
 </template>
 
 <script>
-import TextCard from "@/components/TextCard.vue";
 import News from "@/data/news.json";
 import WhatsNew from "@/components/WhatsNew.vue";
+import ImageTile from "@/components/ImageTile.vue";
+import SeriesShowCase from "@/components/SeriesShowCase.vue";
 
 export default {
   components: {
-    TextCard,
     WhatsNew,
+    ImageTile,
+    SeriesShowCase,
   },
   data() {
     return {
@@ -60,17 +63,4 @@ export default {
 };
 </script>
 
-<style lang="scss">
-.Index {
-  h1 {
-    line-height: 30pt;
-  }
-  h2 {
-    margin-top: 20pt;
-    margin-bottom: 10pt;
-  }
-  p {
-    margin: 0 10pt 7pt 10pt;
-  }
-}
-</style>
+<style lang="scss"></style>

@@ -1,7 +1,5 @@
 <template>
   <div class="About">
-    <h2>当サイトについて</h2>
-
     <TextCard title="ブラウザ環境について">
       <p>
         当サイトは以下の環境でご覧いただくことを推奨いたします。<br />
