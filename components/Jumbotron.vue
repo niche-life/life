@@ -4,10 +4,9 @@
       v-if="this.namespace === 'index'"
       :src="require('@/assets/index/top.jpg')"
       :height="$vuetify.breakpoint.xsOnly ? '80vh' : '60vh'"
-      gradient="to top, rgba(0,0,0,0), rgba(25,32,72,0.4)"
     >
       <v-container fill-height fluid :px-12="$vuetify.breakpoint.mdAndUp">
-        <v-row class="teal--text text--accent-1 pa-4 fill-height">
+        <v-row class="teal--text pa-4 fill-height outline">
           <v-col>
             <div
               class="mb-4"
@@ -25,7 +24,7 @@
             >
               ニッチェ・ライフ
             </h1>
-            <div class="mb-4 subtitle-1">
+            <div class="mb-4 subtitle-1 font-weight-bold">
               ISSN (Online) 2188-0972
             </div>
           </v-col>
@@ -35,13 +34,16 @@
     <v-sheet
       v-else
       :min-height="$vuetify.breakpoint.smAndDown ? '20vh' : '100px'"
-      color="teal lighten-3"
+      color="teal lighten-2"
       height="20vh"
     >
       <v-container fill-height>
         <v-row align-content="center" justify="center" class="fill-height">
           <v-col cols="12">
-            <h1 class="display-1 text-center" v-text="contents.title" />
+            <h1
+              class="display-1 text-center white--text font-weight-black"
+              v-text="contents.title"
+            />
           </v-col>
         </v-row>
       </v-container>
@@ -104,3 +106,11 @@ export default {
   methods: {},
 };
 </script>
+
+<style lang="scss">
+.outline {
+  color: #000;
+  text-shadow: 1px 1px 0 #fff, -1px -1px 0 #fff, -1px 1px 0 #fff,
+    1px -1px 0 #fff, 0px 1px 0 #fff, 0-1px 0 #fff, -1px 0 0 #fff, 1px 0 0 #fff;
+}
+</style>

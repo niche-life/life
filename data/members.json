@@ -14,7 +14,7 @@
       "role": "編集委員 / サブジェクトエディター",
       "comment": "ほげほげ",
       "specialist": "維管束植物",
-      "src": "no-image.jpg"
+      "src": "no-image.png"
     },
     {
       "id": 3,
@@ -22,7 +22,7 @@
       "role": "編集委員 / 運営",
       "comment": "ほげほげ",
       "specialist": "鱗翅目",
-      "src": "no-image.jpg"
+      "src": "no-image.png"
     },
     {
       "id": 4,
@@ -38,7 +38,7 @@
       "role": "編集委員 / サブジェクトエディター",
       "comment": "ほげほげ",
       "specialist": "水生昆虫",
-      "src": "no-image.jpg"
+      "src": "no-image.png"
     },
     {
       "id": 6,
@@ -70,7 +70,7 @@
       "role": "編集委員 / 運営",
       "comment": "ほげほげ",
       "specialist": "",
-      "src": "no-image.jpg"
+      "src": "no-image.png"
     },
     {
       "id": 10,
@@ -78,7 +78,7 @@
       "role": "編集委員 / サブジェクトエディター・組版",
       "comment": "ほげほげ",
       "specialist": "水生甲虫他",
-      "src": "no-image.jpg"
+      "src": "no-image.png"
     }
   ]
 }

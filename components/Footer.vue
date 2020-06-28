@@ -12,8 +12,14 @@
         </v-card-text>
       </div>
       <v-card-text>
-        <v-btn v-for="icon in icons" :key="icon" class="ma-4 white--text" icon>
-          <v-icon size="40px">{{ icon }}</v-icon>
+        <v-btn
+          v-for="icon in icons"
+          :key="icon"
+          :href="icon.path"
+          class="mx-2 white--text"
+          icon
+        >
+          <v-icon size="30px" v-text="icon.icon" />
         </v-btn>
       </v-card-text>
       <v-card-text class="white--text body-1">
@@ -34,7 +40,10 @@ export default {
   },
   data() {
     return {
-      icons: ["fab fa-twitter", "fab fa-github"],
+      icons: [
+        { icon: "fab fa-twitter", path: "https://twitter.com/nichelife_tw" },
+        { icon: "fab fa-github", path: "https://github.com/niche-life/life" },
+      ],
     };
   },
 };

@@ -1,11 +1,5 @@
 <template>
-  <v-app-bar
-    dark
-    v-scroll="onScroll"
-    app
-    elevate-on-scroll
-    :color="!isScrolling ? 'teal' : 'teal'"
-  >
+  <v-app-bar dark v-scroll="onScroll" app elevate-on-scroll color="teal">
     <v-toolbar-title class="font-weight-bold">ニッチェ・ライフ</v-toolbar-title>
     <v-spacer />
     <v-divider vertical />
