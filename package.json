@@ -11,18 +11,24 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
-    "@nuxtjs/sitemap": "^2.2.0",
-    "nuxt": "^2.12.2",
+    "@nuxtjs/sitemap": "^2.4.0",
+    "epic-spinners": "^1.1.0",
+    "nuxt": "^2.13.2",
+    "swiper": "^5.3.7",
+    "vue-awesome-swiper": "^4.1.0",
     "vue-property-decorator": "^8.4.0"
   },
   "devDependencies": {
-    "@fortawesome/fontawesome-free": "^5.13.0",
-    "@nuxtjs/google-analytics": "^2.2.3",
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^9.0.1",
+    "@fortawesome/fontawesome-free": "^5.13.1",
+    "@nuxtjs/google-analytics": "^2.3.0",
     "@nuxtjs/vuetify": "^1.0.0",
-    "eslint-config-prettier": "^6.10.1",
-    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "husky": "^4.2.5",
     "minimist": "^1.2.5",
-    "prettier": "^2.0.4"
+    "prettier": "^2.0.5"
   },
   "resolutions": {
     "minimist": "^1.2.5"

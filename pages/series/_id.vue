@@ -1,6 +1,5 @@
 <template>
   <div class="About">
-    <h2>巻号詳細</h2>
     <div v-for="(magazine, i) in magazineData" :key="i">
       <div v-if="magazine.no == $route.params.id">
         <MagazineDetailCard :items="magazine" />
