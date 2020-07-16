@@ -21,7 +21,7 @@
   "devDependencies": {
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^9.0.1",
-    "@fortawesome/fontawesome-free": "^5.13.1",
+    "@fortawesome/fontawesome-free": "^5.14.0",
     "@nuxtjs/google-analytics": "^2.3.0",
     "@nuxtjs/vuetify": "^1.0.0",
     "eslint-config-prettier": "^6.11.0",
