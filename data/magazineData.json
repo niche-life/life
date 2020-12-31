@@ -1,8 +1,8 @@
 {
   "magazineData": [
     {
-      "no": 8, 
-      "series": "ニッチェ・ライフ 第8号" ,
+      "no": 8,
+      "series": "ニッチェ・ライフ 第8号",
       "url": "008/Niche008.pdf",
       "publishedDate": "2020/12/31",
       "image": "NicheLife8.jpg",
@@ -86,7 +86,7 @@
           "url": "008/Niche008_12.pdf"
         },
         {
-          "title": "高知県宿毛市にて採集したクロスジラッパウニ<i>Toxopneustes elegans</i> Döderlein,1885（ウニ綱：カマロドント目）",
+          "title": "高知県宿毛市にて採集したクロスジラッパウニToxopneustes elegans Döderlein,1885（ウニ綱：カマロドント目）",
           "author": "佐々木　渉太 ・田中 颯",
           "page": "42-44",
           "url": "008/Niche008_13.pdf"

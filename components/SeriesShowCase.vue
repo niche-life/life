@@ -68,6 +68,10 @@ export default {
       },
       seriesList: [
         {
+          img: "https://media.niche-life.com/thumbnail/NicheLife8.jpg",
+          to: "/series/8",
+        },
+        {
           img: "https://media.niche-life.com/thumbnail/NicheLife7.jpg",
           to: "/series/7",
         },
