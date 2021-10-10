@@ -13,22 +13,22 @@
   "dependencies": {
     "@nuxtjs/sitemap": "^2.4.0",
     "epic-spinners": "^1.1.0",
-    "nuxt": "^2.14.12",
-    "swiper": "^5.3.7",
+    "nuxt": "^2.15.8",
+    "swiper": "^5.4.5",
     "vue-awesome-swiper": "^4.1.0",
     "vue-property-decorator": "^8.4.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^9.0.1",
-    "@fortawesome/fontawesome-free": "^5.13.1",
+    "@fortawesome/fontawesome-free": "^5.15.4",
     "@nuxtjs/google-analytics": "^2.3.0",
     "@nuxtjs/vuetify": "^1.0.0",
     "eslint-config-prettier": "^6.11.0",
-    "eslint-plugin-prettier": "^3.1.4",
-    "husky": "^4.2.5",
+    "eslint-plugin-prettier": "^4.0.0",
+    "husky": "^7.0.2",
     "minimist": "^1.2.5",
-    "prettier": "^2.0.5"
+    "prettier": "^2.4.1"
   },
   "resolutions": {
     "minimist": "^1.2.5"
