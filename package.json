@@ -15,7 +15,7 @@
     "epic-spinners": "^1.1.0",
     "nuxt": "^2.15.8",
     "swiper": "^5.4.5",
-    "vue-awesome-swiper": "^4.1.0",
+    "vue-awesome-swiper": "^4.1.1",
     "vue-property-decorator": "^8.4.0"
   },
   "devDependencies": {
