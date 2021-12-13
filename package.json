@@ -23,7 +23,7 @@
     "@commitlint/config-conventional": "^13.2.0",
     "@fortawesome/fontawesome-free": "^5.15.4",
     "@nuxtjs/google-analytics": "^2.3.0",
-    "@nuxtjs/vuetify": "^1.0.0",
+    "@nuxtjs/vuetify": "^1.12.3",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-prettier": "^4.0.0",
     "husky": "^7.0.2",
