@@ -5,12 +5,8 @@
     <WhatsNew :items="newsItems" />
 
     <TextCard>
-      <h1>
-        すべての生き物好きのための生物雑誌『ニッチェ・ライフ』
-      </h1>
-      <h2>
-        オープンアクセス・投稿無料の生き物雑誌
-      </h2>
+      <h1>すべての生き物好きのための生物雑誌『ニッチェ・ライフ』</h1>
+      <h2>オープンアクセス・投稿無料の生き物雑誌</h2>
       <p>
         『ニッチェ・ライフ』誌は、誰でも無料で読めるウェブ生物雑誌です。あなたの調査研究活動の成果や、生き物の魅力を広く伝えるための記事を集めて発行しています。
       </p>
@@ -32,6 +28,18 @@
       </p>
       <p>
         本誌は、そうした生き物の姿を、誰でも気軽に学術的な形で記録できる媒体となることを目指し、発行を行っています。本誌を読んだ皆さんが、その多様な生き様をもっと知りたい、その多様性の一端を明らかにしたい、多様性を次世代に残していきたいと感じていただければ幸いです。
+      </p>
+      <p>
+        <a
+          class="twitter-timeline"
+          href="https://twitter.com/NicheLife_Tw?ref_src=twsrc%5Etfw"
+          >Tweets by NicheLife_Tw</a
+        >
+        <script
+          async
+          src="https://platform.twitter.com/widgets.js"
+          charset="utf-8"
+        ></script>
       </p>
     </TextCard>
   </div>
