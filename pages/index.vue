@@ -33,8 +33,8 @@
         <a
           class="twitter-timeline"
           href="https://twitter.com/NicheLife_Tw?ref_src=twsrc%5Etfw"
-          >Tweets by NicheLife_Tw</a
-        >
+          >ニッチェ・ライフ（@NicheLife_Tw）のツイートを見る
+        </a>
         <script
           async
           src="https://platform.twitter.com/widgets.js"
