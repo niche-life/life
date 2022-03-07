@@ -97,7 +97,7 @@
           </li>
             <!-- prettier-ignore -->
             <li>
-            Brown, A. B. and White, C. D. 1999. The Samples. 12-15. In. Red, E., Black, F. and Blue, G.(eds.) 1999. SAMPLE. Sample Book Publisher, London.　*書籍の一部
+            Brown, A. B. and White, C. D. 1999. The Samples. 12–15. In. Red, E., Black, F. and Blue, G.(eds.) 1999. SAMPLE. Sample Book Publisher, London.　*書籍の一部
           </li>
             <!-- prettier-ignore -->
             <li>
