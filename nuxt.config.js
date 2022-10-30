@@ -117,6 +117,7 @@ export default {
       "/series/7",
       "/series/8",
       "/series/9",
+      "/series/10",
     ],
   },
   generate: {
@@ -130,6 +131,7 @@ export default {
       "/series/7",
       "/series/8",
       "/series/9",
+      "/series/10",
     ],
   },
   /*
@@ -170,7 +172,7 @@ export default {
     /*
      ** You can extend webpack config here
      */
-    extend(config, ctx) {},
+    extend(config, ctx) { },
     vendor: ["vue-awesome-swiper"],
   },
 };
