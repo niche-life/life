@@ -35,6 +35,21 @@
         本誌は、そうした生き物の姿を、誰でも気軽に学術的な形で記録できる媒体となることを目指し、発行を行っています。本誌を読んだ皆さんが、その多様な生き様をもっと知りたい、その多様性の一端を明らかにしたい、多様性を次世代に残していきたいと感じていただければ幸いです。
       </p>
     </ImageTile>
+    <div class="Index">
+      <div class="twitter-timeline-container">
+        <a
+          id="twitterTimeline"
+          class="twitter-timeline"
+          href="https://twitter.com/NicheLife_Tw?ref_src=twsrc%5Etfw"
+          >Tweets by NicheLife_Tw</a
+        >
+        <script
+          async
+          src="https://platform.twitter.com/widgets.js"
+          charset="utf-8"
+        ></script>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -54,6 +69,19 @@ export default {
     return {
       newsItems: News.newsItems.slice(0, 1),
     };
+  },
+  mounted() {
+    this.adjustTwitterTimelineHeight();
+  },
+  methods: {
+    adjustTwitterTimelineHeight() {
+      var twitterTimeline = document.getElementById("twitterTimeline");
+      if (window.innerWidth <= 600) {
+        twitterTimeline.setAttribute("data-height", "300");
+      } else {
+        twitterTimeline.setAttribute("data-height", "800");
+      }
+    },
   },
   head() {
     return {
