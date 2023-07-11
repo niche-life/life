@@ -96,7 +96,6 @@ export default {
   max-width: 1000px;
   margin: 20px auto;
 }
-
 @media (max-width: 600px) {
   .twitter-timeline-container {
     padding: 10px; /* スマホ表示ではパディングを10pxに変更 */
