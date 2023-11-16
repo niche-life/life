@@ -118,6 +118,7 @@ export default {
       "/series/8",
       "/series/9",
       "/series/10",
+      "/series/11",
     ],
   },
   generate: {
@@ -132,6 +133,7 @@ export default {
       "/series/8",
       "/series/9",
       "/series/10",
+      "/series/11",
     ],
   },
   /*
