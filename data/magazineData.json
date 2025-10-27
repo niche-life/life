@@ -1,6 +1,21 @@
 {
   "magazineData": [
     {
+      "no": 13,
+      "series": "ニッチェ・ライフ 第13号",
+      "url": "013/Niche013.pdf",
+      "publishedDate": "2025/10/30",
+      "image": "NicheLife13.jpg",
+      "article": [
+        {
+          "title": "各記事のPDFはこちらから（J-STAGEへのリンク）",
+          "author": "",
+          "page": "",
+          "url": "https://www.jstage.jst.go.jp/browse/nichelife/13/0/_contents/-char/ja"
+        },
+      ]
+    }
+    {
       "no": 12,
       "series": "ニッチェ・ライフ 第12号",
       "url": "012/Niche012.pdf",
