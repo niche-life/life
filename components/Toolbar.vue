@@ -47,7 +47,7 @@ export default {
   data: () => ({
     isScrolling: false,
     icons: [
-      { icon: "fab fa-twitter", path: "https://twitter.com/nichelife_tw" },
+      { icon: "fa-brands fa-x-twitter", path: "https://x.com/nichelife_tw" },
       { icon: "fab fa-github", path: "https://github.com/niche-life/life" },
     ],
     items: [
