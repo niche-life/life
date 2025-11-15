@@ -10,6 +10,14 @@
     },
     {
       "id": 2,
+      "name": "日比野　友亮",
+      "role": "副編集委員長 / サブジェクトエディター",
+      "comment": "ほげほげ",
+      "specialist": "魚類",
+      "src": "yusuke-hibino.jpg"
+    },
+    {
+      "id": 3,
       "name": "大西　亘",
       "role": "編集委員 / サブジェクトエディター",
       "comment": "ほげほげ",
@@ -17,15 +25,15 @@
       "src": "no-image.png"
     },
     {
-      "id": 3,
-      "name": "神保宇嗣",
+      "id": 4,
+      "name": "神保　宇嗣",
       "role": "編集委員 / 運営",
       "comment": "ほげほげ",
       "specialist": "鱗翅目",
       "src": "no-image.png"
     },
     {
-      "id": 4,
+      "id": 5,
       "name": "田中　颯",
       "role": "編集委員 / Web開発・サブジェクトエディター",
       "comment": "ほげほげ",
@@ -33,15 +41,15 @@
       "src": "hayate-tanaka.jpg"
     },
     {
-      "id": 5,
+      "id": 6,
       "name": "塚本　成幸",
-      "role": "編集委員 / サブジェクトエディター",
+      "role": "編集委員 / 会計 / サブジェクトエディター",
       "comment": "ほげほげ",
       "specialist": "植物生理学",
       "src": "shigeyuki-tsukamoto.jpg"
     },
     {
-      "id": 6,
+      "id": 7,
       "name": "中島　淳",
       "role": "編集委員 / サブジェクトエディター",
       "comment": "ほげほげ",
@@ -49,15 +57,23 @@
       "src": "no-image.png"
     },
     {
-      "id": 7,
-      "name": "早川昌志",
+      "id": 8,
+      "name": "長野　太輝",
       "role": "編集委員 / 運営",
       "comment": "ほげほげ",
-      "specialist": "微生物",
+      "specialist": "",
+      "src": "no-image.jpg"
+    },
+    {
+      "id": 9,
+      "name": "早川　昌志",
+      "role": "編集委員 / サブジェクトエディター",
+      "comment": "ほげほげ",
+      "specialist": "原生生物",
       "src": "masashi-hayakawa.jpg"
     },
     {
-      "id": 8,
+      "id": 10,
       "name": "林　亮太",
       "role": "編集委員 / サブジェクトエディター",
       "comment": "ほげほげ",
@@ -65,15 +81,7 @@
       "src": "ryota-hayashi.jpg"
     },
     {
-      "id": 9,
-      "name": "日比野友亮",
-      "role": "編集委員 / サブジェクトエディター",
-      "comment": "ほげほげ",
-      "specialist": "魚類",
-      "src": "yusuke-hibino.jpg"
-    },
-    {
-      "id": 10,
+      "id": 11,
       "name": "宮川　翼",
       "role": "編集委員 / 運営",
       "comment": "ほげほげ",
@@ -81,8 +89,8 @@
       "src": "no-image.png"
     },
     {
-      "id": 11,
-      "name": "吉富博之",
+      "id": 12,
+      "name": "吉富　博之",
       "role": "編集委員 / サブジェクトエディター・組版",
       "comment": "ほげほげ",
       "specialist": "水生甲虫他",
