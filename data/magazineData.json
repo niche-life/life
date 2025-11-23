@@ -1,8 +1,23 @@
 {
   "magazineData": [
+{
+      "no": 13,
+      "series": "ニッチェ・ライフ 第13巻（通巻13号）",
+      "url": "013/Niche013.pdf",
+      "publishedDate": "2025/11/15",
+      "image": "NicheLife13.jpg",
+      "article": [
+        {
+          "title": "各記事のPDFはこちらから（J-STAGEへのリンク）",
+          "author": "",
+          "page": "",
+          "url": "https://www.jstage.jst.go.jp/browse/nichelife/13/0/_contents/-char/ja"
+        }
+      ]
+    }
     {
       "no": 12,
-      "series": "ニッチェ・ライフ 第12号",
+      "series": "ニッチェ・ライフ 第12巻（通巻12号）",
       "url": "012/Niche012.pdf",
       "publishedDate": "2024/10/30",
       "image": "NicheLife12.jpg",
@@ -371,7 +386,7 @@
     },
     {
       "no": 11,
-      "series": "ニッチェ・ライフ 第11号",
+      "series": "ニッチェ・ライフ 第11巻（通巻11号）",
       "url": "011/Niche011.pdf",
       "publishedDate": "2023/10/30",
       "image": "NicheLife11.jpg",
@@ -668,7 +683,7 @@
     },
     {
       "no": 10,
-      "series": "ニッチェ・ライフ 第10号",
+      "series": "ニッチェ・ライフ 第10巻（通巻10号）",
       "url": "010/Niche010.pdf",
       "publishedDate": "2022/10/20",
       "image": "NicheLife10.jpg",
@@ -899,7 +914,7 @@
     },
     {
       "no": 9,
-      "series": "ニッチェ・ライフ 第9号",
+      "series": "ニッチェ・ライフ 第9巻（通巻9号）",
       "url": "009/Niche009.pdf",
       "publishedDate": "2022/2/28",
       "image": "NicheLife9.jpg",
@@ -1123,7 +1138,7 @@
     },
     {
       "no": 8,
-      "series": "ニッチェ・ライフ 第8号",
+      "series": "ニッチェ・ライフ 第8巻（通巻8号）",
       "url": "008/Niche008.pdf",
       "publishedDate": "2020/12/31",
       "image": "NicheLife8.jpg",
@@ -1306,7 +1321,7 @@
     },
     {
       "no": 7,
-      "series": "ニッチェ・ライフ 第7号",
+      "series": "ニッチェ・ライフ 第7巻（通巻7号）",
       "publishedDate": "2020/04/01",
       "url": "007/Niche007.pdf",
       "image": "NicheLife7.jpg",
@@ -1429,7 +1444,7 @@
     },
     {
       "no": 6,
-      "series": "ニッチェ・ライフ 第6号",
+      "series": "ニッチェ・ライフ 第6巻（通巻6号）",
       "publishedDate": "2019/05/31",
       "url": "006/Niche006.pdf",
       "image": "NicheLife6.jpg",
@@ -1468,7 +1483,7 @@
     },
     {
       "no": 5,
-      "series": "ニッチェ・ライフ 第5号",
+      "series": "ニッチェ・ライフ 第5巻（通巻5号）",
       "url": "005/Niche005.pdf",
       "publishedDate": "2017/12/31",
       "image": "NicheLife5.jpg",
@@ -1513,7 +1528,7 @@
     },
     {
       "no": 4,
-      "series": "ニッチェ・ライフ 第4号",
+      "series": "ニッチェ・ライフ 第4巻（通巻4号）",
       "url": "004/Niche004.pdf",
       "publishedDate": "2016/12/31",
       "image": "NicheLife4.jpg",
@@ -1564,7 +1579,7 @@
     },
     {
       "no": 3,
-      "series": "ニッチェ・ライフ 第3号",
+      "series": "ニッチェ・ライフ 第3巻（通巻3号）",
       "url": "003/Niche003.pdf",
       "publishedDate": "2015/12/31",
       "image": "NicheLife3.jpg",
@@ -1603,7 +1618,7 @@
     },
     {
       "no": 2,
-      "series": "ニッチェ・ライフ 第2号",
+      "series": "ニッチェ・ライフ 第2巻（通巻2号）",
       "url": "002/Niche002.pdf",
       "publishedDate": "2014/12/31",
       "image": "NicheLife2.jpg",
@@ -1654,7 +1669,7 @@
     },
     {
       "no": 1,
-      "series": "ニッチェ・ライフ 第1号",
+      "series": "ニッチェ・ライフ 第1巻（通巻1号）",
       "url": "001/Niche001.pdf",
       "publishedDate": "2013/9/30",
       "image": "NicheLife1.jpg",
