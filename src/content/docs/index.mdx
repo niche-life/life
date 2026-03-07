@@ -1,0 +1,37 @@
+---
+title: ニッチェ・ライフ
+description: Get started building your docs site with Starlight.
+hero:
+  tagline: すべての生き物好きのためのオンライン雑誌
+  image:
+    file: ../../assets/icon.png # TODO アイコン変更
+  actions:
+    - text: 記事を読む
+      link: volumes
+      icon: "open-book"
+    - text: 投稿する
+      link: submit/rules
+      icon: "pen"
+    - text: J-STAGE
+      link: https://www.jstage.jst.go.jp/browse/nichelife/list/-char/ja
+      attrs: { target: "_blank" }
+      variant: secondary
+      icon: "external"
+---
+
+import { Card, CardGrid } from "@astrojs/starlight/components";
+import VolumeGrid from "../../components/VolumeGrid.astro";
+
+<VolumeGrid />
+
+<CardGrid stagger>
+  <Card title="オープンアクセス" icon="pencil">
+    『ニッチェ・ライフ』誌は、誰でも無料で読めるウェブ生物雑誌です。あなたの調査研究活動の成果や、生き物の魅力を広く伝えるための記事を集めて発行しています。
+  </Card>
+  <Card title="あらゆる記事" icon="document">
+    あらゆる生物について、分布記録、観察結果、生態調査、研究手法の開発、特定の分類群に関する総説、活動の報告など幅広い記事を取り扱います。
+  </Card>
+  <Card title="投稿無料" icon="add-document">
+    投稿・掲載料は無料です。投稿規定をご確認の上、生物に関する記事をご投稿下さい。生き物好きの皆様、研究者の皆様からの投稿をお待ちしております。
+  </Card>
+</CardGrid>

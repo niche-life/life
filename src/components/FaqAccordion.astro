@@ -1,0 +1,140 @@
+---
+export interface Props {
+  title?: string;
+  faqs: {
+    id: string;
+    question: string;
+    answer: string;
+    defaultOpen?: boolean;
+  }[];
+}
+
+const { title, faqs } = Astro.props;
+---
+
+<div class="bg-gray-100 rounded-3xl p-6 sm:p-8">
+  {title && (
+    <h2 class="text-2xl font-bold text-gray-900 mb-6 text-center">
+      {title}
+    </h2>
+  )}
+  
+  <div class="space-y-3 max-w-4xl mx-auto">
+    {faqs.map((faq) => (
+      <div 
+        key={faq.id}
+        class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition-shadow duration-300"
+      >
+        <button
+          class="w-full px-6 py-5 text-left hover:bg-gray-50 focus:bg-gray-50 focus:outline-none transition-colors duration-200 flex items-center justify-between"
+          type="button"
+          data-accordion-trigger
+          aria-expanded={faq.defaultOpen ? 'true' : 'false'}
+          aria-controls={`faq-content-${faq.id}`}
+        >
+          <span class="text-lg font-medium text-gray-900 pr-4 leading-relaxed">
+            {faq.question}
+          </span>
+          <div class="flex-shrink-0">
+            <svg 
+              class={`w-5 h-5 text-gray-600 transform transition-transform duration-300 ${
+                faq.defaultOpen ? 'rotate-180' : 'rotate-0'
+              }`}
+              data-accordion-icon
+              aria-hidden="true"
+              fill="none" 
+              stroke="currentColor" 
+              viewBox="0 0 24 24"
+              stroke-width="2"
+            >
+              <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" />
+            </svg>
+          </div>
+        </button>
+        
+        <div
+          id={`faq-content-${faq.id}`}
+          class={`px-6 overflow-hidden transition-all duration-300 ease-out ${
+            faq.defaultOpen 
+              ? 'max-h-none pb-6 opacity-100' 
+              : 'max-h-0 pb-0 opacity-0'
+          }`}
+          data-accordion-content
+          role="region"
+          aria-labelledby={`faq-trigger-${faq.id}`}
+        >
+          <div class="text-gray-700 leading-relaxed prose prose-sm max-w-none border-t border-gray-100 pt-4" set:html={faq.answer} />
+        </div>
+      </div>
+    ))}
+  </div>
+</div>
+
+<script>
+  function initAccordion() {
+    const triggers = document.querySelectorAll('[data-accordion-trigger]');
+    
+    triggers.forEach((trigger) => {
+      if (!(trigger instanceof HTMLElement)) return;
+      
+      trigger.addEventListener('click', () => {
+        const isExpanded = trigger.getAttribute('aria-expanded') === 'true';
+        const content = document.getElementById(trigger.getAttribute('aria-controls') || '');
+        const icon = trigger.querySelector('[data-accordion-icon]');
+        
+        if (content && icon) {
+          if (isExpanded) {
+            // 閉じる
+            trigger.setAttribute('aria-expanded', 'false');
+            content.classList.remove('max-h-none', 'pb-6', 'opacity-100');
+            content.classList.add('max-h-0', 'pb-0', 'opacity-0');
+            icon.classList.remove('rotate-180');
+            icon.classList.add('rotate-0');
+          } else {
+            // 開く
+            trigger.setAttribute('aria-expanded', 'true');
+            content.classList.remove('max-h-0', 'pb-0', 'opacity-0');
+            content.classList.add('max-h-none', 'pb-6', 'opacity-100');
+            icon.classList.remove('rotate-0');
+            icon.classList.add('rotate-180');
+          }
+        }
+      });
+    });
+    
+    // 初期状態のアイコン設定
+    triggers.forEach((trigger) => {
+      if (!(trigger instanceof HTMLElement)) return;
+      const isExpanded = trigger.getAttribute('aria-expanded') === 'true';
+      const icon = trigger.querySelector('[data-accordion-icon]');
+      
+      if (icon && isExpanded) {
+        icon.classList.add('rotate-180');
+      } else if (icon) {
+        icon.classList.add('rotate-0');
+      }
+    });
+  }
+
+  // DOMContentLoaded後とナビゲーション後の両方で初期化
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initAccordion);
+  } else {
+    initAccordion();
+  }
+  
+  // Astroのナビゲーション後にも再初期化
+  document.addEventListener('astro:page-load', initAccordion);
+</script>
+
+<style>
+  /* プログレッシブエンハンスメント: JSが無効でも基本的な表示は機能する */
+  @media (prefers-reduced-motion: reduce) {
+    [data-accordion-content] {
+      transition: none !important;
+    }
+    [data-accordion-icon] {
+      transition: none !important;
+    }
+  }
+</style>

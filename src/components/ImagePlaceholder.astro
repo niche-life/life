@@ -1,0 +1,17 @@
+---
+interface Props {
+  width: number;
+  height: number;
+  text?: string;
+  class?: string;
+}
+
+const { width, height, text = "No Image", class: className = "" } = Astro.props;
+---
+
+<div
+  class={`flex items-center justify-center bg-gray-500 text-gray-400 text-xs rounded ${className}`}
+  style={`width: ${width}px; height: ${height}px;`}
+>
+  <span>{text}</span>
+</div>

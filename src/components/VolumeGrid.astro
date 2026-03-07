@@ -1,0 +1,38 @@
+---
+import { Image } from "astro:assets";
+import { loadAllVolumesWithImages } from "../utils/data.ts";
+import type { ImageMetadata } from "astro";
+
+// 新しい分離データ構造で全巻データと表紙画像を一括取得
+const volumesWithImages = await loadAllVolumesWithImages();
+
+// グリッド用のデータ構造化（新しい順で8冊まで）
+const imageData = volumesWithImages
+  .filter((volume): volume is typeof volume & { coverImage: ImageMetadata } => volume.coverImage !== undefined) // 画像が存在するもののみ（型ガード）
+  .slice(0, 8) // 8冊まで表示
+  .map((volume) => ({
+    src: volume.coverImage,
+    volumeNo: volume.no,
+    volumeLink: `/volumes/${volume.no}/`,
+    alt: volume.title,
+  }));
+---
+
+<section class="py-15">
+  <div class="container mx-auto max-w-6xl">
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 md:gap-6">
+      {
+        imageData.map((item) => (
+            <a href={item.volumeLink} class="block w-full h-full transition-all duration-200 hover:ring-accent-600 ring-3 ring-transparent rounded-lg" title={item.alt}>
+              <Image src={item.src} alt={item.alt} class="w-full h-full object-cover object-center rounded-lg shadow-md transition-shadow duration-200 border border-gray-200" />
+            </a>
+        ))
+      }
+    </div>
+    <div class="text-center mt-10">
+      <a href="/volumes/" class="text-green-600 hover:text-green-800 font-medium transition-colors duration-200 decoration-green-600 hover:decoration-green-800 no-underline">
+        バックナンバーへ →
+      </a>
+    </div>
+  </div>
+</section>

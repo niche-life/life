@@ -1,0 +1,50 @@
+---
+import StarlightPage from "@astrojs/starlight/components/StarlightPage.astro";
+import VolumeDetail from "../../components/VolumeDetail.astro";
+import {
+  getVolumeStaticPaths,
+  loadVolumeWithArticles,
+} from "../../utils/data.ts";
+
+export async function getStaticPaths() {
+  // 新しい分離データ構造で静的パスを生成
+  return await getVolumeStaticPaths();
+}
+
+const { id } = Astro.params;
+const { volumeNo } = Astro.props;
+
+// 巻データと記事データを分離して取得（最適化）
+const { volume, articles } = await loadVolumeWithArticles(volumeNo);
+
+if (!volume) {
+  throw new Error(`Volume ${volumeNo} not found`);
+}
+
+// SEOとナビゲーション用のデータ
+const pageTitle = `${volume.title} | ニッチェ・ライフ`;
+const pageDescription = `ニッチェ・ライフ第${volume.no}号の記事一覧。${volume.publishedDate}発行。`;
+---
+
+<StarlightPage
+  frontmatter={{
+    title: volume.title,
+    description: pageDescription,
+  }}
+>
+  <div class="max-w-300 mx-auto">
+    <VolumeDetail
+      volumeNo={volume.no}
+      title={volume.title}
+      publishedDate={volume.publishedDate}
+      image={volume.image}
+      url={volume.url}
+      fullPdfUrl={volume.fullPdfUrl}
+      articles={articles}
+    />
+
+    <div class="mt-8 pt-8">
+      <a href="/volumes/" class="inline-block mb-4 text-(--sl-color-accent) no-underline font-medium hover:underline">← 一覧に戻る</a>
+    </div>
+  </div>
+</StarlightPage>

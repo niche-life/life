@@ -1,0 +1,31 @@
+---
+import FaqAccordion from './FaqAccordion.astro';
+
+export interface Props {
+  groups: {
+    id: string;
+    title: string;
+    faqs: {
+      id: string;
+      question: string;
+      answer: string;
+      defaultOpen?: boolean;
+    }[];
+  }[];
+  spacing?: 'normal' | 'large';
+}
+
+const { groups, spacing = 'normal' } = Astro.props;
+const spacingClass = spacing === 'large' ? 'space-y-12' : 'space-y-8';
+---
+
+<div class={spacingClass}>
+  {groups.map((group) => (
+    <div key={group.id} class="w-full">
+      <FaqAccordion
+        title={group.title}
+        faqs={group.faqs}
+      />
+    </div>
+  ))}
+</div>

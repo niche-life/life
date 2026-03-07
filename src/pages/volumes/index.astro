@@ -1,0 +1,57 @@
+---
+import StarlightPage from "@astrojs/starlight/components/StarlightPage.astro";
+import { Card } from "@astrojs/starlight/components";
+import { Image } from "astro:assets";
+import ImagePlaceholder from "../../components/ImagePlaceholder.astro";
+import { loadAllVolumesWithImages } from "../../utils/data.ts";
+import type { ImageMetadata } from "astro";
+
+// 新しい分離データ構造で全巻データと表紙画像を一括取得
+const volumesWithImages = await loadAllVolumesWithImages();
+---
+
+<StarlightPage
+  frontmatter={{
+    title: "バックナンバー",
+    description: "ニッチェ・ライフの各バックナンバー。無料でお読みいただけます。",
+  }}
+>
+  <div class="grid grid-cols-1 gap-4">
+    {
+      volumesWithImages.map((volume) => (
+        <a
+          href={`/volumes/${volume.no}/`}
+          class="no-underline text-inherit block group"
+        >
+          <div class="flex gap-4 p-3 rounded-lg border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 transition-colors">
+            <div class="shrink-0">
+              {volume.coverImage ? (
+                <Image
+                  src={volume.coverImage as ImageMetadata}
+                  alt={`表紙 - ${volume.title}`}
+                  width="180"
+                  height="255"
+                  class="w-24 h-34 sm:w-30 sm:h-42 rounded object-cover"
+                />
+              ) : (
+                <ImagePlaceholder width={180} height={255} />
+              )}
+            </div>
+
+            <div class="flex-1 flex flex-col justify-center min-w-0">
+              <h3 class="m-0 text-base font-semibold leading-tight group-hover:underline">
+                {volume.title}
+              </h3>
+              <p class="m-0 text-gray-600 dark:text-gray-400 mt-1">
+                発行日: {volume.publishedDate}
+              </p>
+              <p class="m-0 text-gray-600 dark:text-gray-400">
+                記事数: {volume.articleCount}件
+              </p>
+            </div>
+          </div>
+        </a>
+      ))
+    }
+  </div>
+</StarlightPage>
