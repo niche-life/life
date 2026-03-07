@@ -1,0 +1,91 @@
+---
+import { logos } from "virtual:starlight/user-images";
+import config from "virtual:starlight/user-config";
+const { siteTitle, siteTitleHref } = Astro.locals.starlightRoute;
+---
+
+<a href={siteTitleHref} class="site-title-wrapper flex items-center md:items-start gap-4 text-xl font-bold text-gray-800 dark:text-white no-underline whitespace-nowrap min-w-0 group">
+  {
+    config.logo && logos.dark && (
+      <>
+        <img
+          class:list={{
+            "light:sl-hidden print:hidden": !("src" in config.logo),
+            "shrink-0": true,
+          }}
+          alt={config.logo.alt}
+          src={logos.dark.src}
+          width={logos.dark.width}
+          height={logos.dark.height}
+        />
+        {/* Show light alternate if a user configure both light and dark logos. */}
+        {!("src" in config.logo) && (
+          <img
+            class="dark:sl-hidden print:block shrink-0"
+            alt={config.logo.alt}
+            src={logos.light?.src}
+            width={logos.light?.width}
+            height={logos.light?.height}
+          />
+        )}
+      </>
+    )
+  }
+  <div class="title-content flex flex-col items-start">
+    <span class:list={{ "sr-only": config.logo?.replacesTitle }} translate="no">
+      {siteTitle}
+    </span>
+    <span class="issn-text text-xs text-gray-500 dark:text-gray-400 font-normal leading-tight">
+      ISSN 2188-0972 (Online)
+    </span>
+  </div>
+</a>
+
+<style>
+  @layer starlight.core {
+    .site-title-wrapper {
+      line-height: 1.2;
+    }
+
+    .title-content {
+      min-width: 0; /* Prevent text overflow issues */
+    }
+
+    .title-content span:first-child {
+      overflow: hidden;
+      line-height: 1.2;
+    }
+
+    .issn-text {
+      margin-top: 0.125rem; /* Fine-tune spacing */
+    }
+
+    /* Logo sizing */
+    img {
+      height: calc(var(--sl-nav-height) - 2 * var(--sl-nav-pad-y));
+      width: auto;
+      max-width: 100%;
+      object-fit: contain;
+      object-position: 0 50%;
+    }
+
+    /* Hover effect for the entire site title area */
+    .site-title-wrapper:hover .issn-text {
+      color: rgb(107 114 128); /* Slightly darker gray on hover */
+    }
+
+    /* Dark mode adjustments */
+    @media (prefers-color-scheme: dark) {
+      .site-title-wrapper:hover .issn-text {
+        color: rgb(209 213 219); /* Lighter on hover in dark mode */
+      }
+    }
+
+    /* Mobile adjustments */
+    @media (max-width: 640px) {
+      .site-title-wrapper {
+        gap: 0.75rem; /* Slightly smaller gap on mobile */
+      }
+    }
+  }
+</style>

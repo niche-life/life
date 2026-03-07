@@ -1,0 +1,117 @@
+---
+import { Image } from "astro:assets";
+import { getCoverImage } from "../utils/data.ts";
+import type { Article } from "../utils/data.ts";
+
+interface Props {
+  volumeNo: number;
+  title: string;
+  publishedDate: string;
+  image: string;
+  url?: string;
+  fullPdfUrl?: string;
+  articles: Article[];
+}
+
+const { volumeNo, title, publishedDate, image, url, fullPdfUrl, articles } = Astro.props;
+
+// 新しいデータ取得ユーティリティで表紙画像を取得
+const coverImageSrc = await getCoverImage(image);
+
+// 分離データ構造では表紙記事は既に除外済み
+const filteredArticles = articles;
+
+// URLを適切に生成する関数
+const getArticleUrl = (url: string | undefined) => {
+  if (!url) return "#";
+  if (url.startsWith("https://")) return url;
+  return `https://media.niche-life.com/series/${url}`;
+};
+
+// DOIリンクかどうかを判定する関数
+const isDOI = (url: string | undefined) => {
+  return url?.startsWith("https://doi.org/") ?? false;
+};
+
+// フルPDF URLを適切に生成する関数
+const getFullPdfUrl = (url: string | undefined) => {
+  if (!url) return "#";
+  if (url.startsWith("https://")) return url;
+  return `https://media.niche-life.com/series/${url}`;
+};
+---
+
+<div class="mb-10">
+  <div>
+    {
+      coverImageSrc ? (
+        <Image
+          src={coverImageSrc}
+          alt={`表紙 - ${title}`}
+          width="180"
+          height="254"
+          class="border border-gray-300"
+        />
+      ) : (
+        <div class="w-45 h-63.5 bg-gray-500 flex items-center justify-center text-gray-100 rounded-lg">
+          <span>No Image</span>
+        </div>
+      )
+    }
+  </div>
+  <div>
+    <p>公開日：{publishedDate}</p>
+  </div>
+</div>
+
+<div>
+  <ul class="list-none p-0 m-0">
+    {
+      filteredArticles.map((article) => (
+        <li>
+            <div class="flex flex-col mb-8">
+              <a
+                href={getArticleUrl(article.url)}
+                class="text-(--sl-color-accent) no-underline font-semibold text-base leading-tight inline-block self-start hover:text-(--sl-color-accent-high) hover:underline"
+                target="_blank"
+                rel="noopener"
+              >
+                {article.title}
+              </a>
+              {article.author && (
+                <div class="text-gray-400 text-[0.9rem] m-0">
+                  {article.author}
+                </div>
+              )}
+              {isDOI(article.url) && (
+                <div class="flex flex-nowrap items-center gap-2 m-0">
+                  <span class="inline-flex items-center px-2 py-0.5 text-xs font-medium bg-blue-100 text-blue-800 rounded whitespace-nowrap">
+                    DOI
+                  </span>
+                  <span class="text-xs text-gray-400 font-sans break-all">
+                    {article.url}
+                  </span>
+                </div>
+              )}
+            </div>
+        </li>
+      ))
+    }
+  </ul>
+</div>
+
+{fullPdfUrl && (
+  <div class="mt-10 pt-10">
+    <a
+      href={getFullPdfUrl(fullPdfUrl)}
+      class="text-(--sl-color-accent) no-underline font-semibold text-base leading-tight inline-block hover:text-(--sl-color-accent-high) hover:underline"
+      target="_blank"
+      rel="noopener"
+    >
+      フルPDF（全記事まとめ）
+    </a>
+    <p class="text-gray-400 text-sm mt-1 m-0">
+      大容量ファイルのため、ダウンロード時の通信量にご注意ください。Wi-Fi接続を推奨します。
+    </p>
+  </div>
+)}

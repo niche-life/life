@@ -1,0 +1,60 @@
+@layer base, starlight, theme, components, utilities;
+
+@import "@astrojs/starlight-tailwind";
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/utilities.css" layer(utilities);
+
+:root {
+  /* Starlight レイアウト幅のカスタマイズ */
+  --sl-content-width: 70rem;
+  --sl-sidebar-width: 20rem;
+  /* ヘッダー背景色: ダークモードは黒 */
+  --sl-color-bg-nav: var(--sl-color-black);
+  --sl-color-hairline-shade: var(--color-gray-700) 
+}
+
+:root[data-theme='light'] {
+  /* ヘッダー背景色: ライトモードは白 */
+  --sl-color-bg-nav: white;
+  --sl-color-hairline-shade: var(--color-gray-200) 
+}
+
+@theme {
+  --color-accent-50: var(--color-emerald-50);
+  --color-accent-100: var(--color-emerald-100);
+  --color-accent-200: var(--color-emerald-200);
+  --color-accent-300: var(--color-emerald-300);
+  --color-accent-400: var(--color-emerald-400);
+  --color-accent-500: var(--color-emerald-500);
+  --color-accent-600: var(--color-emerald-600);
+  --color-accent-700: var(--color-emerald-700);
+  --color-accent-800: var(--color-emerald-800);
+  --color-accent-900: var(--color-emerald-900);
+  --color-accent-950: var(--color-emerald-950);
+
+  --color-gray-50: var(--color-zinc-50);
+  --color-gray-100: var(--color-zinc-100);
+  --color-gray-200: var(--color-zinc-200);
+  --color-gray-300: var(--color-zinc-300);
+  --color-gray-400: var(--color-zinc-400);
+  --color-gray-500: var(--color-zinc-500);
+  --color-gray-600: var(--color-zinc-600);
+  --color-gray-700: var(--color-zinc-700);
+  --color-gray-800: var(--color-zinc-800);
+  --color-gray-900: var(--color-zinc-900);
+  --color-gray-950: var(--color-zinc-950);
+}
+
+/* ===== 左サイドバー（ナビゲーション）のフォントサイズ調整 ===== */
+
+/* グループタイトル（大見出し） */
+.sidebar-content .top-level > li > details > summary span,
+.sidebar-content .top-level > li > a {
+  font-size: var(--text-lg);
+}
+
+/* 個別ページへのリンク */
+.sidebar-content ul ul a {
+  font-size: var(--text-base);
+  font-weight: var(--font-weight-medium)
+}

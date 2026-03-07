@@ -1,0 +1,52 @@
+---
+import { LinkButton } from "@astrojs/starlight/components";
+
+const { data } = Astro.locals.starlightRoute.entry;
+const { title = data.title, tagline, image, actions = [] } = data.hero || {};
+---
+
+<div class="relative isolate px-6 pt-18 lg:px-8">
+  <div class="text-center">
+    <h1
+      data-page-title
+      set:html={title}
+      class="text-4xl text-(--color-accent-600) tracking-tight font-black text-balance sm:text-5xl lg:text-6xl"
+    />
+    {
+      tagline && (
+        <div
+          class="text-base text-balance py-4 sm:text-lg lg:text-xl"
+          set:html={tagline}
+        />
+      )
+    }
+  </div>
+  {
+    actions.length > 0 && (
+      <div class="flex gap-4 flex-wrap justify-center">
+        {actions.map(
+          ({
+            attrs: { class: className, ...attrs } = {},
+            icon,
+            link: href,
+            text,
+            variant,
+          }) => (
+            <LinkButton
+              {href}
+              {variant}
+              icon={icon?.name}
+              class:list={[className]}
+              {...attrs}
+            >
+              <div class="font-bold">
+              {text}
+              </div>
+              {icon?.html && <Fragment set:html={icon.html} />}
+            </LinkButton>
+          ),
+        )}
+      </div>
+    )
+  }
+</div>
